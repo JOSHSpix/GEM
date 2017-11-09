@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.header {
+background-color: #7ec0ee;
+}
+#logo {
+float: left;
+font-size: 25px;
+padding: 5px 5px 5px 30px;
+color: white;
+}
+.menu_nav ul {
+list-style-type: none;
+margin: 0;
+padding: 10px 60px 5px 15px;
+overflow: hidden;
+
+}
+
+.menu_nav li {
+float: right;
+font-size: 18px;
+}
+
+li a {
+display: block;
+color: white;
+padding: 14px 20px;
+text-decoration: none;
+}
+
+.menu_nav li a:hover {
+background-color: white;
+color: #7ec0ee;
+}
+.active {
+background-color: white;
+color: #7ec0ee;
+}
+* {
+box-sizing:border-box;
+}
+
+.photos {
+display:none;
+animation-name: photos;
+animation-duration: 1.5s;
+text-align: center;
+}
+
+.photos img {
+border: 8px solid white;
+}
+
+.slideshow {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active {
+background-color: white;
+}
+
+</style>
+
+<head>
+<title>G.E.M: Gold Enterprise Management</title>
+</head>
+<body>
+<div class = "header">
+<div id = "logo">
+<p>G.E.M: Gold Enterprise Management</p>
+</div>
+<div class = "menu_nav">
+<ul>
+<li><a href="file:///Users/issaasbah/Desktop/contact%20us.html">Contact us</a></li>
+<li><a href="#about">About</a></li>
+
+<li><a class="active" href="#home">Home</a></li> 
+</ul>
+</div>
+<div class="slideshow">
+
+<div class="photos">
+<img src="https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2012/12/05/100281353-gold_bars_piles_gettyP.jpg?v=1494552432" style="width:700px" height="400px">
+</div>
+
+<div class="photos">
+<img src="http://resize.indiatvnews.com/en/resize/newbucket/715_-/2017/05/gold-1495776752.jpg" style="width:700px" height="400px">
+</div>
+
+<div class="photos">
+<img src="https://apmex.exceda.com/images/Catalog%20Images/Products/6894_Obv.jpg?v=20160811030010&width=450&height=450" style="width:700px" height="400px">
+</div>
+
+<div style="text-align:center">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span>
+</div>
+
+</div>
+
+</div>
+</body>
+<script>
+var index = 0;
+displaySlides();
+
+function displaySlides() {
+var slides = document.getElementsByClassName("photos");
+var dots = document.getElementsByClassName("dot");
+for (var i = 0; i < slides.length; i++) {
+slides[i].style.display = "none"; 
+}
+index++;
+if (index > slides.length) {
+index = 1
+} 
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[index-1].style.display = "block"; 
+dots[index-1].className += " active";
+setTimeout(displaySlides, 2000); // Change image every 2 seconds
+}
+</script>
+</html>
+
+here is the code for the contact us:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+body {
+background-color: #e6e6e6;
+font-size: 100%;
+font-family: 'Lato', sans-serif;
+font-weight: 400;
+}
+
+div, textarea, input {
+box-sizing: border-box;
+}
+
+.contact-us {
+max-width: 510px;
+min-width: 324px;
+margin: 50px auto 0px;
+background-color: #fff;
+border: 1px solid #cfcfcf;
+border-bottom: 3px solid #ccc;
+}
+
+.row {
+width: 100%;
+margin: 0 0 1em 0;
+padding: 0 2.5em;
+}
+.row.header {
+padding: 1.5em 2.5em;
+border-bottom: 1px solid #ccc;
+background: url(https://lh3.googleusercontent.com/UeTM7l-R6Xnd-I6A65nr6p-QFwG-U3FRGxCmPCXcpB6QxegLWLxG8lvveZW8dxHLNt2bSDdFlDC6q3vmbCdhx6DoziUIHC19=s750) left -80px;
+color: #000000;
+}
+.row.body {
+padding: .5em 2.5em 1em;
+}
+
+h1 {
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+display: inline-block;
+font-weight: 100;
+font-size: 2.8125em;
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+margin: 0 0 0.1em 0;
+padding: 0 0 0.4em 0;
+}
+
+form {
+max-width: 100%;
+display: block;
+}
+form ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+form ul li {
+margin: 0 0 0.25em 0;
+clear: both;
+display: inline-block;
+width: 100%;
+}
+
+form ul li p {
+margin: 0;
+padding: 0;
+}
+
+form ul li .divider {
+margin: 0.5em 0 0.5em 0;
+border: 0;
+height: 1px;
+width: 100%;
+display: block;
+background-color: #4f6fad;
+background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+}
+form ul li span {
+color: #ee9cb4;
+}
+form label {
+display: block;
+margin: 0 0 6px 0;
+color: #7ec0ee;
+font-size: 16px;
+}
+form input {
+margin: 0 0 8px 0;
+border: 1px solid #ccc;
+padding: 6px 10px;
+margin: 0 0 12px 0;
+color: #000000;
+font-size: 1em;
+}
+
+form textarea {
+border: 1px solid #ccc;
+padding: 6px 10px;
+width: 100%;
+color: #555;
+}
+
+input {
+width: 100%;
+}
+
+label {
+width: 100%;
+display: inline-block;
+float: left;
+clear: both;
+}
+
+li, p {
+width: 100%;
+}
+
+h1 {
+font-size: 40px;
+}
+
+.submit {
+background-color: #7ec0ee;
+color: white;
+padding: 15px 32px;
+text-align: center;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+</style>
+<div class="contact-us">
+<div class="row header">
+<h1>CONTACT US</h1>
+</div>
+<div class="row body">
+<form action="#">
+<ul>
+
+<li>
+<p class="requirments">
+<label for="first_name">Name <span>*</span></label>
+<input type="text" name="Name" placeholder="Name" required/>
+
+
+<label for="email">Email <span>*</span></label>
+<input type="email" name="email" placeholder="Email address" />
+
+<label for="last_name">Subject <span>*</span></label>
+<input type="text" name="subject" placeholder="Subject" required/> 
+
+<label for="comments">comments</label>
+<textarea cols="100" rows="5" name="comments"></textarea>
+
+<input class="submit" type="submit" value="Submit" />
+</li>
+
+</ul>
+</form> 
+</div>
+</div>
+</html>
