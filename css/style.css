@@ -1,5 +1,16 @@
 html, body { padding: 0px; margin: 0px; }
 
+body {
+background-color: #e6e6e6;
+font-size: 100%;
+font-family: font-family: Verdana, Helvetica, sans-serif;
+font-weight: 400;
+}
+
+div, textarea, input {
+box-sizing: border-box;
+}
+
 #logo {
 float: left;
 font-size: 25px;
@@ -78,7 +89,7 @@ width: 100vw;
 overflow: hidden;
 float: relative;
 list-style-type: none;
-margin: auto;
+margin: 50px auto 20px auto;
 }
 .item_list li {
 float: left;
@@ -146,17 +157,6 @@ margin: 2px 0px 0px 8px;
   padding: 10px;
   text-align: center;
   padding-top: 90px;
-}
-
-body {
-background-color: #e6e6e6;
-font-size: 100%;
-font-family: font-family: Verdana, Helvetica, sans-serif;
-font-weight: 400;
-}
-
-div, textarea, input {
-box-sizing: border-box;
 }
 
 .contact_us {
