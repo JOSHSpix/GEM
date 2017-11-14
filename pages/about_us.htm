@@ -7,8 +7,73 @@ text-align: center;
 margin: 0px 0px 0px 0px;
 padding: 15px 0px 15px 0px;
 
+html, body { padding: 0px; margin: 0px; }
+
+#logo {
+float: left;
+font-size: 25px;
+padding: 5px 5px 5px 30px;
+line-height:12px;
+color: white;
+margin: 0px;
+font-family: Verdana, Helvetica, sans-serif;
+}
+
+.header {
+background-color: #7ec0ee;
+width: 100%;
+height: 13%;
+position: absolute;
+}
+
+.menu_nav ul {
+list-style-type: none;
+margin: 0px;
+padding: 15px 20px 5px 10px;
+overflow: hidden;
+font-family: Verdana, Helvetica, sans-serif;
+}
+
+.menu_nav li {
+float: right;
+font-size: 16px;
+}
+
+li a {
+display: block;
+color: white;
+padding: 14px 20px;
+text-decoration: none;
+}
+.menu_nav li a:hover {
+background-color: white;
+color: #7ec0ee;
+}
+
+.active {
+background-color: white;
+color: #7ec0ee;
+}
+
 
 </style>
+
+<body>
+	<div class = "header">
+		<div id = "logo">
+			<p>G.E.M: Gold Enterprise Management</p>
+		</div>
+	<div class = "menu_nav">
+		<ul>
+			<li><a href="/contact_us.htm">Contact us</a></li>
+			<li><a href="/account.htm">Your Account</a></li>
+			<li><a href="/store.htm">Store</a></li>
+			<li><a href="/about_us.htm">About</a></li>
+			<li><a class="active" href="/home.htm">Home</a></li> 
+		</ul>
+	</div>
+	</div>
+</body>
 
 
 <div class="about-us">
@@ -20,3 +85,5 @@ padding: 15px 0px 15px 0px;
 		</P>
 	</div>
 </div>
+
+</html>
