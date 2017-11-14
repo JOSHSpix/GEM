@@ -245,3 +245,173 @@ color: grey;
 text-align: left; 
 margin: 2px 0px 0px 8px; 
 }
+#logo {
+float: left;
+font-size: 25px;
+padding: 5px 5px 5px 30px;
+line-height:12px;
+color: white;
+margin: 0px;
+font-family: Verdana, Helvetica, sans-serif;
+}
+
+.header {
+background-color: #7ec0ee;
+width: 100%;
+height: 13%;
+position: absolute;
+}
+
+.menu_nav ul {
+list-style-type: none;
+margin: 0px;
+padding: 15px 20px 5px 10px;
+overflow: hidden;
+font-family: Verdana, Helvetica, sans-serif;
+}
+
+.menu_nav li {
+float: right;
+font-size: 16px;
+}
+
+li a {
+display: block;
+color: white;
+padding: 14px 20px;
+text-decoration: none;
+}
+.menu_nav li a:hover {
+background-color: white;
+color: #7ec0ee;
+}
+
+body {
+background-color: #e6e6e6;
+font-size: 100%;
+font-family: 'Lato', sans-serif;
+font-weight: 400;
+}
+
+div, textarea, input {
+box-sizing: border-box;
+}
+
+.contact-us {
+max-width: 510px;
+min-width: 324px;
+margin: 50px auto 0px;
+background-color: #fff;
+border: 1px solid #cfcfcf;
+border-bottom: 3px solid #ccc;
+}
+
+.row {
+width: 100%;
+margin: 0 0 1em 0;
+padding: 0 2.5em;
+}
+.row.header {
+padding: 1.5em 2.5em;
+border-bottom: 1px solid #ccc;
+background: url(https://lh3.googleusercontent.com/UeTM7l-R6Xnd-I6A65nr6p-QFwG-U3FRGxCmPCXcpB6QxegLWLxG8lvveZW8dxHLNt2bSDdFlDC6q3vmbCdhx6DoziUIHC19=s750) left -80px;
+color: #000000;
+}
+.row.body {
+padding: .5em 2.5em 1em;
+}
+
+h1 {
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+display: inline-block;
+font-weight: 100;
+font-size: 2.8125em;
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+margin: 0 0 0.1em 0;
+padding: 0 0 0.4em 0;
+}
+
+form {
+max-width: 100%;
+display: block;
+}
+form ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+form ul li {
+margin: 0 0 0.25em 0;
+clear: both;
+display: inline-block;
+width: 100%;
+}
+
+form ul li p {
+margin: 0;
+padding: 0;
+}
+
+form ul li .divider {
+margin: 0.5em 0 0.5em 0;
+border: 0;
+height: 1px;
+width: 100%;
+display: block;
+background-color: #4f6fad;
+background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+}
+form ul li span {
+color: #ee9cb4;
+}
+form label {
+display: block;
+margin: 0 0 6px 0;
+color: #7ec0ee;
+font-size: 16px;
+}
+form input {
+margin: 0 0 8px 0;
+border: 1px solid #ccc;
+padding: 6px 10px;
+margin: 0 0 12px 0;
+color: #000000;
+font-size: 1em;
+}
+
+form textarea {
+border: 1px solid #ccc;
+padding: 6px 10px;
+width: 100%;
+color: #555;
+}
+
+input {
+width: 100%;
+}
+
+label {
+width: 100%;
+display: inline-block;
+float: left;
+clear: both;
+}
+
+li, p {
+width: 100%;
+}
+
+h1 {
+font-size: 40px;
+}
+
+.submit {
+background-color: #7ec0ee;
+color: white;
+padding: 15px 32px;
+text-align: center;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
