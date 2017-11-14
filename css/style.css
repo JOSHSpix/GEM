@@ -16,7 +16,6 @@ color: white;
 margin: 0px;
 font-family: Verdana, Helvetica, sans-serif;
 }
-
 .menu_nav ul {
 list-style-type: none;
 margin: 0px;
@@ -26,16 +25,17 @@ font-family: Verdana, Helvetica, sans-serif;
 }
 
 .menu_nav li {
-float: right !important;
-display: inline !important;
+float: right;
 font-size: 16px;
 }
 
 li a {
+display: block;
 color: white;
 padding: 14px 20px;
 text-decoration: none;
 }
+
 .menu_nav li a:hover {
 background-color: white;
 color: #7ec0ee;
