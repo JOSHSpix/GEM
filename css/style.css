@@ -1,5 +1,4 @@
 html, body { padding: 0px; margin: 0px; }
-* {box-sizing:border-box;}
 
 .header {
 background-color: #7ec0ee;
@@ -27,13 +26,13 @@ font-family: Verdana, Helvetica, sans-serif;
 }
 
 .menu_nav li {
-display: inline;
 float: right !important;
 font-size: 16px;
 }
 
 li a {
 display: inline;
+float: right;
 color: white;
 padding: 14px 20px;
 text-decoration: none;
@@ -47,6 +46,8 @@ color: #7ec0ee;
 background-color: white;
 color: #7ec0ee;
 }
+
+* {box-sizing:border-box;}
 
 .slideshow {
 max-width: 100%;
