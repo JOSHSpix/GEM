@@ -38,7 +38,7 @@ color: #7ec0ee;
 }
 .active-menu {
 background-color: white;
-color: #7ec0ee;
+color: #7ec0ee !important;
 }
 * {
 box-sizing:border-box;
