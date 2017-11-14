@@ -3,6 +3,47 @@
 
 <style>
 
+#logo {
+float: left;
+font-size: 25px;
+padding: 5px 5px 5px 30px;
+line-height:12px;
+color: white;
+margin: 0px;
+font-family: Verdana, Helvetica, sans-serif;
+}
+
+.header {
+background-color: #7ec0ee;
+width: 100%;
+height: 13%;
+position: absolute;
+}
+
+.menu_nav ul {
+list-style-type: none;
+margin: 0px;
+padding: 15px 20px 5px 10px;
+overflow: hidden;
+font-family: Verdana, Helvetica, sans-serif;
+}
+
+.menu_nav li {
+float: right;
+font-size: 16px;
+}
+
+li a {
+display: block;
+color: white;
+padding: 14px 20px;
+text-decoration: none;
+}
+.menu_nav li a:hover {
+background-color: white;
+color: #7ec0ee;
+}
+
 body {
 background-color: #e6e6e6;
 font-size: 100%;
@@ -134,6 +175,23 @@ cursor: pointer;
 }
 
 </style>
+
+<body>
+	<div class = "header">
+		<div id = "logo">
+			<p>G.E.M: Gold Enterprise Management</p>
+		</div>
+	<div class = "menu_nav">
+		<ul>
+			<li><a href="GEM/pages/contact_us.htm">Contact us</a></li>
+			<li><a href="GEM/pages/account.htm">Your Account</a></li>
+			<li><a href="GEM/pages/store.htm">Store</a></li>
+			<li><a href="GEM/pages/about_us.htm">About</a></li>
+			<li><a class="active" href="GEM/pages/home.htm">Home</a></li> 
+		</ul>
+	</div>
+	</div>
+</body>
 
 <div class="contact-us">
 	<div class="row header">
