@@ -5,10 +5,12 @@ background-color: #e6e6e6;
 font-size: 100%;
 font-family: font-family: Verdana, Helvetica, sans-serif;
 font-weight: 400;
+margin-bottom: 0px;
 }
 
 div, textarea, input {
 box-sizing: border-box;
+margin: auto;
 }
 
 #logo {
@@ -20,12 +22,18 @@ color: white;
 margin: 0px;
 font-family: Verdana, Helvetica, sans-serif;
 }
+
 .header {
-background-color: #7ec0ee;
-width: 100%;
-height: 13%;
+z-index: 1;
 position: fixed;
+background-color: #7ec0ee;
+height: 13%px;
+width: 100%;
+left: 0; 
+right: 0;
+top: 0;
 }
+
 .menu_nav ul {
 list-style-type: none;
 margin: 0px;
@@ -33,6 +41,7 @@ padding: 15px 20px 5px 10px;
 overflow: hidden;
 font-family: Verdana, Helvetica, sans-serif;
 }
+
 .menu_nav li {
 float: right;
 font-size: 16px;
@@ -43,6 +52,7 @@ color: white;
 padding: 14px 20px;
 text-decoration: none;
 }
+
 .menu_nav li a:hover {
 background-color: white;
 color: #7ec0ee;
@@ -160,9 +170,10 @@ margin: 2px 0px 0px 8px;
 }
 
 .contact_us {
+height: 500px;
 max-width: 510px;
 min-width: 324px;
-margin: 0px auto 0px auto;
+margin: 200px auto 0px auto;
 background-color: #fff;
 border: 1px solid #cfcfcf;
 border-bottom: 3px solid #ccc;
