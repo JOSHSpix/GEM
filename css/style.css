@@ -289,8 +289,9 @@ margin: 4px 2px;
 cursor: pointer;
 }
 
-<style>
-
+.nav {
+  display: inline-block;
+}
 .menu {
    padding : 0px 30px;
 }
@@ -334,6 +335,3 @@ a:link {
    display: block;
    text-decoration: none;
 }
-
-
-</style>
