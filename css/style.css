@@ -288,3 +288,52 @@ font-size: 16px;
 margin: 4px 2px;
 cursor: pointer;
 }
+
+<style>
+
+.menu {
+   padding : 0px 30px;
+}
+.sb_menu {
+   list-style-type: none;
+}
+
+a:link {
+   list-style-type: none;
+}
+
+.sb_menu li {
+   padding: 5px 0px;
+}
+.ex_menuNoDropDown {
+   list-style-type: none;
+   
+}
+.ex_menuNoDropDown li {
+   padding: 5px 0px;
+}
+
+.ex_menu li {
+   padding: 5px 0px;
+}
+.ex_menu ul {
+   list-style-type: none; 
+}
+.ex_menu {
+   position: relative;
+   display: block;
+}
+.dropdownMenu {
+   list-style-type: none;
+   padding: 10px 10px;
+   display: none;
+}
+
+
+.ex_menu:hover .dropdownMenu {
+   display: block;
+   text-decoration: none;
+}
+
+
+</style>
