@@ -88,7 +88,7 @@ overflow: hidden;
 display: inline-block;
 list-style-type: none;
 margin: 50px auto 20px auto;
-max-width: 800px
+
 }
 .item_list li {
 float: left;
@@ -96,6 +96,7 @@ border: 1px solid rgb(192,192,192);
 font-family: Verdana, Helvetica, sans-serif;
 padding-bottom: 5px;
 }
+
 .item_list li img {
 display: block;
 height: 150px;
@@ -157,6 +158,7 @@ margin: 2px 0px 0px 8px;
   text-align: center;
   padding-top: 90px;
 }
+
 
 .nav {
   padding-top: 10px;
