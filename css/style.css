@@ -68,7 +68,6 @@ box-sizing:border-box;
 display:none;
 animation-name: photos;
 animation-duration: 1.5s;
-position: center;
 }
 .photos img {
 border: none;
