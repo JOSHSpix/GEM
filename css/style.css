@@ -1,48 +1,40 @@
-html, body { padding: 0px; margin: 0px; }
-
-body {
-background-color: #e6e6e6;
-font-size: 100%;
-font-family: font-family: Verdana, Helvetica, sans-serif;
-font-weight: 400;
-margin-bottom: 0px;
+* {
+box-sizing:border-box
 }
 
-div, textarea, input {
-box-sizing: border-box;
-margin: auto;
-}
-
-#logo {
-float: left;
-font-size: 25px;
-padding: 5px 5px 5px 30px;
-line-height:12px;
-color: white;
-margin: 0px;
-font-family: Verdana, Helvetica, sans-serif;
+.All {
+   background-image: url("https://ak8.picdn.net/shutterstock/videos/14017838/thumb/1.jpg");
+   margin: -8px -10px 0px -8px;
 }
 
 .header {
-z-index: 1;
-background-color: #7ec0ee;
-height: 13%px;
-width: 100%;
+   margin: 5px 0px 50px 5px;
+}
+    
+
+#logo {
+  float: left;
+  font-size: 25px;
+  padding: 5px 5px 5px 30px;
+  color: white;
+  font-family: Verdana, Helvetica, sans-serif;
+
 }
 
-.menu_nav ul {
+.menu_nav {
 list-style-type: none;
-margin: 0px;
-padding: 15px 20px 5px 10px;
+margin: 0;
+padding: 10px 60px 5px 15px;
 overflow: hidden;
-font-family: Verdana, Helvetica, sans-serif;
+
 }
 
 .menu_nav li {
 float: right;
-font-size: 16px;
+font-size: 18px;
 }
-.menu_nav li a {
+
+.menu_nav a {
 display: block;
 color: white;
 padding: 14px 20px;
@@ -52,31 +44,24 @@ text-decoration: none;
 .menu_nav li a:hover {
 background-color: white;
 color: #7ec0ee;
+font-weight: bold;
 }
-.active-menu {
-background-color: white;
-color: #7ec0ee !important;
-}
-* {
-box-sizing:border-box;
-}
+
+
 .photos {
 display:none;
 animation-name: photos;
 animation-duration: 1.5s;
-margin-top: 40px;
+text-align:center;
 }
-.photos img {
-border: none;
-}
+
 .slideshow {
-max-width: 100%;
-height: 90vh;
-position: center;
-margin: 0px 0px 0px 0px;
-padding: 0px;
+max-width: 1000px;
+position: relative;
+margin: auto;
+
 }
-/* The dots/bullets/indicators */
+
 .dot {
 height: 15px;
 width: 15px;
@@ -85,11 +70,19 @@ background-color: #bbb;
 border-radius: 50%;
 display: inline-block;
 transition: background-color 0.6s ease;
+margin-bottom: 30px;
 }
 
 .active-dot {
-background-color: black;
+background-color: white;
 }
+
+.menu_nav .active {
+background-color: white;
+color: #7ec0ee;
+font-weight: bold;
+}
+
 .item_list ul {
 width: 100vw;
 overflow: hidden;
@@ -165,11 +158,85 @@ margin: 2px 0px 0px 8px;
   padding-top: 90px;
 }
 
+
+.nav {
+  padding-top: 10px;
+  width: 20%;
+  background-color: #F0F0F0;
+  margin-left: 30px;
+  margin-right: 10px;
+  position: absolute;
+  height: 100%;
+  float:left;
+}
+
+.menu {
+   padding : 0px 35px;
+}
+.sb_menu {
+   list-style-type: none;
+   position: relative;
+}
+
+
+.sb_menu a {
+   text-decoration: none;
+   color: #000000;
+}
+
+.sb_menu li {
+   padding: 5px 0px;
+}
+
+.ex_menuNoDropDown {
+   list-style-type: none;  
+}
+
+.ex_menuNoDropDown li {
+   padding: 6px 0px;
+}
+
+.ex_menuNoDropDown a{
+   text-decoration: none;
+   color: #000000;  
+}
+
+.ex_menu ul {
+   list-style-type: none; 
+}
+
+.ex_menu li {
+   padding: 5px 0px;
+}
+
+.ex_menu a {
+   position: relative;
+   text-decoration: none;
+   color: #000000;
+}
+
+
+.ex_menu {
+   position: relative;
+   display: block;
+}
+.dropdownMenu {
+   list-style-type: none;
+   padding: 10px 10px;
+   display: none;
+}
+
+
+.ex_menu:hover .dropdownMenu {
+   display: block;
+   text-decoration: none;
+}
+
 .contact_us {
 height: 500px;
 max-width: 510px;
 min-width: 324px;
-margin: 200px auto 0px auto;
+margin: 40px auto 0px auto;
 background-color: #fff;
 border: 1px solid #cfcfcf;
 border-bottom: 3px solid #ccc;
@@ -285,49 +352,3 @@ margin: 4px 2px;
 cursor: pointer;
 }
 
-.nav {
-  display: inline-block;
-}
-.menu {
-   padding : 0px 30px;
-}
-.sb_menu {
-   list-style-type: none;
-}
-
-a:link {
-   list-style-type: none;
-}
-
-.sb_menu li {
-   padding: 5px 0px;
-}
-.ex_menuNoDropDown {
-   list-style-type: none;
-   
-}
-.ex_menuNoDropDown li {
-   padding: 5px 0px;
-}
-
-.ex_menu li {
-   padding: 5px 0px;
-}
-.ex_menu ul {
-   list-style-type: none; 
-}
-.ex_menu {
-   position: relative;
-   display: block;
-}
-.dropdownMenu {
-   list-style-type: none;
-   padding: 10px 10px;
-   display: none;
-}
-
-
-.ex_menu:hover .dropdownMenu {
-   display: block;
-   text-decoration: none;
-}
