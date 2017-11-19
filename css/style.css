@@ -359,10 +359,10 @@ list-style-type: none;
 
 .necklace-products li {
 display: inline-block;
-padding: 10px 10px;
+margin: 10px 10px;
 text-align: center;
 }
 
-.necklace-products .body-style {
+.body-style {
    bacground-color; #00BFFF;
    color: black;
