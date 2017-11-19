@@ -353,11 +353,11 @@ margin: 4px 2px;
 cursor: pointer;
 }
 
-.necklace-products {
+.store-products {
 list-style-type: none;
 }
 
-.necklace-products li {
+.store-products li {
 display: inline-block;
 margin: 10px 10px;
 text-align: center;
