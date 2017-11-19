@@ -5,21 +5,104 @@
 	<link rel = "stylesheet" type = "text/css" href = "/GEM/css/style.css" />
 </head>
 
+<head>
+  <title>G.E.M: Gold Enterprise Management</title>
+</head>
 <body>
-<div class = "header" style="margin-bottom: 500px;">
-	<div id = "logo">
-		<p>G.E.M: Gold Enterprise Management</p>
-	</div>
-	<div class = "menu_nav">
-		<ul>
-			<li><a class="active-menu" href="/GEM/pages/contact_us.htm">Contact us</a></li>
+   <div class = "All">
+      <div class="header">
+         <div id = "logo">
+            <p>G.E.M: Gold Enterprise Management</p>
+         </div>
+         <ul class = "menu_nav">
+              <li><a class="active" href="/GEM/pages/contact_us.htm">Contact us</a></li>
 			<li><a href="/GEM/pages/account.htm">Your Account</a></li>
-			<li><a href="/GEM/pages/store.htm">Store</a></li>
 			<li><a href="/GEM/pages/about_us.htm">About</a></li>
-			<li><a href="/GEM/pages/home.htm">Home</a></li> 
-		</ul>
-	</div>
-</div>
+			<li><a href="/GEM/pages/home.htm">Home</a></li>  
+         </ul>
+      </div>
+      <div class="slideshow">   
+          <div class="photos">
+             <img src="/GEM/images/pendant_chain_gold_jewelry_67622_1920x1080.jpg" width="934px" height="327px" style="border: 8px solid white;">
+          </div>
+
+          <div class="photos">
+              <img src="http://resize.indiatvnews.com/en/resize/newbucket/715_-/2017/05/gold-1495776752.jpg" width="934px" height="327px" style="border: 8px solid white;">
+          </div>
+
+          <div class="photos">
+              <img src="/GEM/images/Untitled-1.jpg" width="934px" height="327px" style="border: 8px solid white;">
+          </div>
+
+          <div style="text-align:center;">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+          </div>
+      </div>
+
+   </div>
+   
+   <div class="nav">
+    <div class="sidebar">
+        <h2 class="menu">Menu</h2>
+          <ul class="sb_menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+      <div class="sidebar">
+          <h2 class="menu"><span>Store</span></h2>
+                 <ul class="ex_menuNoDropDown">
+                    <li><a href="#">Ounce</a></li>
+                    <li><a href="#">Lera (coins)</a></li>
+                 </ul>
+                    
+                <ul class="ex_menu"> 
+                     <a href="#">Necklace</a>
+
+                      <ul class="dropdownMenu">
+                          <li><a href="#">21 carat</a></li>
+                          <li><a href="#">18 carat</a></li>
+                      </ul>
+                </ul>
+
+                <ul class="ex_menu"> 
+                    <a href="#">Bracelets</a>
+                        
+                        <ul class="dropdownMenu">
+                          <li><a href="#">21 carat</a>
+                         </li>
+                          <li><a href="#">18 carat</a></li>
+                          <li><a href="#">14 carat</a></li>
+                      </ul>
+                </ul>
+
+                <ul class="ex_menu"> 
+                   <a href="#">Rings</a>
+                        
+                        <ul class="dropdownMenu"><li><a href="#">21 carat</a></li>
+                          <li><a href="#">18 carat</a></li>
+                          <li><a href="#">14 carat</a></li>
+                        </ul>
+                </ul>
+
+                          
+                <ul class="ex_menu"> 
+                    <a href="#">Earrings</a>
+                       <ul class="dropdownMenu">
+                          <li><a href="#">21 carat</a></li>
+                          <li><a href="#">18 carat</a></li>
+                          <li><a href="#">18 carat</a></li>
+
+                       </ul> 
+                </ul>
+                    
+                </div>
+                </div>
+        </div>
+   
+   
 <div class="contact_us">
 	<div class="row_header">
 		<h1 >CONTACT US</h1>
@@ -39,7 +122,7 @@
 					<label for="last_name">Subject <span>*</span></label>
 					<input type="text" name="subject" placeholder="Subject" required/> 
 
-					<label for="comments">comments</label>
+					<label for="Comments">comments</label>
 					<textarea cols="100" rows="5" name="comments"></textarea>
 
 					<input class="submit" type="submit" value="Submit" />
@@ -49,5 +132,31 @@
 		</form> 
 	</div>
 </div>
+
+
 </body>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("photos");
+var dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+   slides[i].style.display = "none"; 
+}
+slideIndex++;
+if (slideIndex > slides.length) {
+   slideIndex = 1
+} 
+for (i = 0; i < dots.length; i++) {
+   dots[i].className = dots[i].className.replace(" active-dot", "");
+}
+slides[slideIndex-1].style.display = "block"; 
+dots[slideIndex-1].className += " active-dot";
+setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
 </html>
