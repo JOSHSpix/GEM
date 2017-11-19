@@ -68,7 +68,7 @@ box-sizing:border-box;
 display:none;
 animation-name: photos;
 animation-duration: 1.5s;
-text-align: center;
+margin-top: 40px;
 }
 .photos img {
 border: none;
