@@ -8,6 +8,12 @@
 </head>
 
 <head>
+	<title>G.E.M: Gold Enterprise Management</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/GEM/css/style.css" />
+</head>
+
+<head>
   <title>G.E.M: Gold Enterprise Management</title>
 </head>
 <body>
@@ -106,35 +112,10 @@
                 </div>
         </div>
    
-</body>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-var i;
-var slides = document.getElementsByClassName("photos");
-var dots = document.getElementsByClassName("dot");
-for (i = 0; i < slides.length; i++) {
-   slides[i].style.display = "none"; 
-}
-slideIndex++;
-if (slideIndex > slides.length) {
-   slideIndex = 1
-} 
-for (i = 0; i < dots.length; i++) {
-   dots[i].className = dots[i].className.replace(" active-dot", "");
-}
-slides[slideIndex-1].style.display = "block"; 
-dots[slideIndex-1].className += " active-dot";
-setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
 
 
-	<h1 style="font-family: Verdana, Helvetica, sans-serif; margin-left:20px;"> Featured Items </h1>
-	<div class="item_list">
+	<div class="item_list" style="margin-left:25%;">
+	    <h1 style="font-family: Verdana, Helvetica, sans-serif; margin-left:20px;"> Featured Items </h1>
 		<ul>
 			<li><a href="/GEM/pages/store.htm"><img src="https://prodimages.velvetcase.com/images/ER603022/view1/big/22k-gold-earring-1466588066-y-w.jpg?scale.width=56"></a>
 				<h3 class="item_title">Gold Earings</h4>
@@ -163,13 +144,12 @@ setTimeout(showSlides, 2000); // Change image every 2 seconds
 			</li>
 		</ul>
 	</div>
-</body>
 
-<body>
-	<p style="text-align: center;">WORK IN PROGRESS</P>
-	<div id="img-holder">
-	  <div class="left"> < </div>
-	  <div class="right"> > </div>
+
+	<div id="img-holder" style="max-width:100%; margin-top:10px;">
+	  
+	  <div class="left">&lt;</div>
+	  <div class="right">&gt;</div>
 	  <img src="https://prodimages.velvetcase.com/images/ER603022/view1/big/22k-gold-earring-1466588066-y-w.jpg?scale.width=56" alt="" class="slide-img" />
 	  <img src="https://www.csjewellers.com/assets/web/product/images/zoom/NEK4702054.jpg" alt="" class="slide-img" />
 	  <img src="https://www.fhinds.co.uk/Images/Product/Default/large/G8615_L_1.jpg" alt="" class="slide-img" />
@@ -179,6 +159,28 @@ setTimeout(showSlides, 2000); // Change image every 2 seconds
 </body>
 
 <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("photos");
+var dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+   slides[i].style.display = "none"; 
+}
+slideIndex++;
+if (slideIndex > slides.length) {
+   slideIndex = 1
+} 
+for (i = 0; i < dots.length; i++) {
+   dots[i].className = dots[i].className.replace(" active-dot", "");
+}
+slides[slideIndex-1].style.display = "block"; 
+dots[slideIndex-1].className += " active-dot";
+setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
 
 translateX = 0;
 
