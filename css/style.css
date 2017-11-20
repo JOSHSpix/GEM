@@ -78,9 +78,9 @@ background-color: white;
 
 .menu_nav .active {
 background-color: white;
+margin: 0px 7px;
 color: #7ec0ee;
 font-weight: bold;
-margin: 0px 7px;
 }
 
 .item_list ul {
