@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>G.E.M: Gold Enterprise Management</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/GEM/css/style.css" />
+</head>
+
+<head>
+  <title>G.E.M: Gold Enterprise Management</title>
+</head>
+<body>
+   <div class = "All">
+      <div class="header">
+         <div id = "logo">
+            <p>G.E.M: Gold Enterprise Management</p>
+         </div>
+         <ul class = "menu_nav">
+              <li><a href="/GEM/pages/contact_us.htm">Contact us</a></li>
+			<li><a href="/GEM/pages/account.htm">Your Account</a></li>
+			<li><a href="/GEM/pages/about_us.htm">About</a></li>
+			<li><a  class="active" href="/GEM/pages/home.htm">Home</a></li>  
+         </ul>
+      </div>
+      <div class="slideshow">   
+          <div class="photos">
+             <img src="/GEM/images/pendant_chain_gold_jewelry_67622_1920x1080.jpg" width="927px" height="367px" style="border: 8px solid white;">
+          </div>
+
+          <div class="photos">
+              <img src="http://resize.indiatvnews.com/en/resize/newbucket/715_-/2017/05/gold-1495776752.jpg" width="927px" height="367px" style="border: 8px solid white;">
+          </div>
+
+          <div class="photos">
+              <img src="/GEM/images/Untitled-1.jpg" width="927px" height="367px" style="border: 8px solid white;">
+          </div>
+
+          <div style="text-align:center;">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+          </div>
+      </div>
+
+   </div>
+   
+   <div class="nav">
+    <div class="sidebar">
+        <h2 class="menu">Menu</h2>
+          <ul class="sb_menu">
+            <li><a href="/GEM/pages/home.htm">Home</a></li>
+            <li><a href="/GEM/pages/about_us.htm">About</a></li>
+            <li><a href="/GEM/pages/account.htm">Your Account</a></li>
+            <li><a href="/GEM/pages/contact_us.htm">Contact Us</a></li>
+          </ul>
+      <div class="sidebar">
+          <h2 class="menu"><span>Store</span></h2>
+                 <ul class="ex_menuNoDropDown">
+                    <li><a href="/GEM/pages/ounce.htm">Ounce</a></li>
+                    <li><a href="/GEM/pages/coins.htm">Lera (coins)</a></li>
+                 </ul>
+                    
+                <ul class="ex_menu"> 
+                     <a href="#">Necklace</a>
+
+                      <ul class="dropdownMenu">
+                          <li><a href="/GEM/pages/necklace-21k.htm">21 carat</a></li>
+                          <li><a href="/GEM/pages/necklace-18k.htm">18 carat</a></li>
+                      </ul>
+                </ul>
+
+                <ul class="ex_menu"> 
+                    <a href="#">Bracelets</a>
+                        
+                        <ul class="dropdownMenu">
+                          <li><a href="/GEM/pages/bracelets.htm">21 carat</a></li>
+                          <li><a href="/GEM/pages/bracelets_18k.htm">18 carat</a></li>
+                          <li><a href="/GEM/pages/bracelets_14k.htm">14 carat</a></li>
+                      </ul>
+                </ul>
+
+                <ul class="ex_menu"> 
+                   <a href="#">Rings</a>
+                        
+                        <ul class="dropdownMenu">
+                          <li><a href="/GEM/pages/rings_21k.htm">21 carat</a></li>
+                          <li><a href="/GEM/pages/rings_18k.htm">18 carat</a></li>
+                          <li><a href="/GEM/pages/rings_14k.htm">14 carat</a></li>
+                        </ul>
+                </ul>
+
+                          
+                <ul class="ex_menu"> 
+                    <a href="#">Earrings</a>
+                       <ul class="dropdownMenu">
+                          <li><a href="#">21 carat</a></li>
+                          <li><a href="#">18 carat</a></li>
+                          <li><a href="#">18 carat</a></li>
+
+                       </ul> 
+                </ul>
+                    
+                </div>
+                </div>
+        </div>
+	
+        <div class="products">
+           <ul class="store_products" style="margin-left:25%;">
+              <li>
+                 <img src="/GEM/images/rings_18k.jpeg" alt="ring" width="200px" height="200px">
+                 <p>weight: 4.5 gram</p
+                  <p>price: 240 CAD</p>
+              </li>
+              <li>
+                 <img src="/GEM/images/rings1_18k.jpg" alt="ring" width="200px" height="200px">
+                 <p>weight: 8.4 gram</p
+                 <p>price: 450 CAD</p>
+              </li>
+              <li>
+                 <img src="/GEM/images/ring2.jpg" alt="ring" width="200px" height="200px">
+                 <p>weight: 7.6 gram</p
+                  <p>price: 440 CAD</p>
+              </li>
+              <li>
+                 <img src="/GEM/images/rings2_18k.jpg" alt="ring" width="200px" height="200px">
+                 <p>weight: 7.2 gram</p
+                 <p>price: 385 CAD</p>
+              </li>
+            </ul>
+        </div>
+
+
+</body>
+
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("photos");
+var dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+   slides[i].style.display = "none"; 
+}
+slideIndex++;
+if (slideIndex > slides.length) {
+   slideIndex = 1
+} 
+for (i = 0; i < dots.length; i++) {
+   dots[i].className = dots[i].className.replace(" active-dot", "");
+}
+slides[slideIndex-1].style.display = "block"; 
+dots[slideIndex-1].className += " active-dot";
+setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</html>
