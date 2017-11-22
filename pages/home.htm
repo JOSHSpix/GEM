@@ -177,11 +177,11 @@ setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
 
-translateX = 0;
+var translateX = 0;
 
 $(".left").on("click", function(){
   translateX -= 100;
-  $("#img-holder .slide-img").css('transform', 'translateX('+translateX+'px)');
+  $("#img-holder .slide-img").css('transform', 'translateX('+translateX+'px)');	
   
   if ($(".slide-img:first").offset().left - $(".slide-img:first").width() < $("#img-holder").offset().left) {
       $("#img-holder").append($(".slide-img:first").css("transform", "translateX(0px)"));
