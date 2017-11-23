@@ -367,6 +367,11 @@ color: #3493d8;
 text-decoration: none;
 }
 
+a.dropdown-content {
+color: #3493d8;
+text-decoration: none;
+}
+
 a.toggle-content:hover {
 color: orange;
 text-decoration: underline;
