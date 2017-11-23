@@ -361,34 +361,13 @@ display: inline-block;
 margin: 10px 10px;
 text-align: center;
 }
-#container {
-  width: 400px;
-  margin: 50px auto;
-}
 
-.active-content {
-  display: block;
-}
 
 .hidden-content {
   display: none;
 }
 
-a.toggle-content {
-  display: inline-block;
-  border-radius: 5px;
-  border: 1px solid #333;
-  text-decoration: none;
-  background: #DDD;
-  color: #333;
-  text-align: center;
-  padding: 15px;
-}
 
-a.toggle-content:hover, a.toggle-content.active {
-  background: #AAA;
-  color: #EEE;
-}
 
    
 
