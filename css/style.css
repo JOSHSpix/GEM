@@ -227,7 +227,7 @@ margin: 2px 0px 0px 8px;
 }
 
 
-.ex_menu.active .dropdownMenu {
+.ex_menu.hover .dropdownMenu {
    display: block;
    text-decoration: none;
 }
