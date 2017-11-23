@@ -226,8 +226,7 @@ margin: 2px 0px 0px 8px;
    display: none;
 }
 
-
-.ex_menu.hover .dropdownMenu {
+.ex_menu:hover .dropdownMenu {
    display: block;
    text-decoration: none;
 }
@@ -380,7 +379,6 @@ text-decoration: underline;
 a.toggle-content.active {
 color: #3493d8;
 font-weight: bold;
-
 }
 
 .hidden-content {
