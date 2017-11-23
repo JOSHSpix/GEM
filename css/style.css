@@ -292,11 +292,27 @@ text-align: center;
 
 
 
-
 a.toggle-content {
 color: #3493d8;
 text-decoration: none;
 }
+.ex_menuNoDropDown {
+   list-style-type: none;  
+}
+
+.ex_menuNoDropDown li {
+   padding: 6px 0px;
+}
+
+.ex_menuNoDropDown a{
+   text-decoration: none;
+}
+
+a.dropdown-content:hover {
+	color: orange;
+	text-decoration: underline;
+}
+
 
 a.dropdown-content {
 color: #3493d8;
@@ -327,17 +343,7 @@ font-weight: bold;
   display: none;
 }
 
-.ex_menuNoDropDown {
-   list-style-type: none;  
-}
 
-.ex_menuNoDropDown li {
-   padding: 6px 0px;
-}
-
-.ex_menuNoDropDown a{
-   text-decoration: none;
-}
 
 .ex_menu ul {
    list-style-type: none; 
