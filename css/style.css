@@ -368,7 +368,7 @@ font-weight: bold;
    display: none;
 }
 
-.ex_menu:hover .dropdownMenu {
+.ex_menu .dropdownMenu.active {
    display: block;
    text-decoration: none;
 }
