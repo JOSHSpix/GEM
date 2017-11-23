@@ -312,9 +312,6 @@ margin-top: 15px;
   display: block;
   margin-top: 15px;
 }
-.dropdown-content.expanded {
-  font-weight: bold;
-}
 
 a.toggle-content:hover {
 color: orange;
