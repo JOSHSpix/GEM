@@ -337,7 +337,6 @@ font-weight: bold;
 
 .ex_menuNoDropDown a{
    text-decoration: none;
-   color: #000000;  
 }
 
 .ex_menu ul {
@@ -351,9 +350,12 @@ font-weight: bold;
 .ex_menu a {
    position: relative;
    text-decoration: none;
-   color: #000000;
 }
 
+.ex_menu:hover {
+color: orange;
+text-decoration: underline;
+}
 
 .ex_menu {
    position: relative;
