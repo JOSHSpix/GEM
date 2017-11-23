@@ -447,10 +447,10 @@ $(".toggle-content").on("click", function(){
 });
 
 /*Store Menu Click to Expand*/
+
 $(".dropdown-content").on("click", function(){
   var show_div = $(this).data("show");
   $(this).addClass("expanded");
-  // $(".dropdownMenu").removeClass("active");
   
   $(".dropdownMenu."+show_div).toggleClass("active");
   
