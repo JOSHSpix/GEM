@@ -64,8 +64,8 @@
                 </ul>
                     
                 <ul class="ex_menu"> 
-                    <a class="dropdown-content" href="#">+Necklace</a>
-						<ul class="dropdownMenu">
+                    <a class="dropdown-content" data-show="necklace" href="#">+Necklace</a>
+						<ul class="dropdownMenu necklace">
                             <li><a data-show="21_necklace" class="toggle-content" href="#">21 carat</a></li>
                             <li><a data-show="18_necklace" class="toggle-content" href="#">18 carat</a></li>
                         </ul>
@@ -442,6 +442,17 @@ $(".toggle-content").on("click", function(){
   
   $(".active-content").toggleClass("hidden-content").toggleClass("active-content");
   $("."+toggle_class).toggleClass("hidden-content").toggleClass("active-content");
+  
+  return false;
+});
+
+/*Store Menu Click to Expand*/
+$(".dropdown-content").on("click", function(){
+  var show_div = $(this).data("show");
+  $(this).addClass("expanded");
+  // $(".dropdownMenu").removeClass("active");
+  
+  $(".dropdownMenu."+show_div).toggleClass("active");
   
   return false;
 });

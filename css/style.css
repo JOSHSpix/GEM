@@ -158,79 +158,6 @@ margin: 2px 0px 0px 8px;
   padding-top: 90px;
 }
 
-
-.nav {
-  padding-top: 10px;
-  width: 20%;
-  background-color: #F0F0F0;
-  margin-left: 30px;
-  margin-right: 10px;
-  height: 100%;
-  position: absolute;
-  float: left;
-}
-
-.menu {
-   padding : 0px 35px;
-}
-.sb_menu {
-   list-style-type: none;
-   position: relative;
-}
-
-
-.sb_menu a {
-   text-decoration: none;
-   color: #000000;
-}
-
-.sb_menu li {
-   padding: 5px 0px;
-}
-
-.ex_menuNoDropDown {
-   list-style-type: none;  
-}
-
-.ex_menuNoDropDown li {
-   padding: 6px 0px;
-}
-
-.ex_menuNoDropDown a{
-   text-decoration: none;
-   color: #000000;  
-}
-
-.ex_menu ul {
-   list-style-type: none; 
-}
-
-.ex_menu li {
-   padding: 5px 0px;
-}
-
-.ex_menu a {
-   position: relative;
-   text-decoration: none;
-   color: #000000;
-}
-
-
-.ex_menu {
-   position: relative;
-   display: block;
-}
-.dropdownMenu {
-   list-style-type: none;
-   padding: 10px 10px;
-   display: none;
-}
-
-.ex_menu:hover .dropdownMenu {
-   display: block;
-   text-decoration: none;
-}
-
 .contact_us {
 height: 500px;
 max-width: 510px;
@@ -361,6 +288,11 @@ margin: 10px 10px;
 text-align: center;
 }
 
+
+
+
+
+
 a.toggle-content {
 color: #3493d8;
 text-decoration: none;
@@ -369,6 +301,19 @@ text-decoration: none;
 a.dropdown-content {
 color: #3493d8;
 text-decoration: none;
+display: block;
+margin-top: 15px;
+}
+
+.dropdownMenu.active {
+  display: block;
+}
+.dropdown-content {
+  display: block;
+  margin-top: 15px;
+}
+.dropdown-content.expanded {
+  font-weight: bold;
 }
 
 a.toggle-content:hover {
@@ -384,6 +329,81 @@ font-weight: bold;
 .hidden-content {
   display: none;
 }
+
+.ex_menuNoDropDown {
+   list-style-type: none;  
+}
+
+.ex_menuNoDropDown li {
+   padding: 6px 0px;
+}
+
+.ex_menuNoDropDown a{
+   text-decoration: none;
+   color: #000000;  
+}
+
+.ex_menu ul {
+   list-style-type: none; 
+}
+
+.ex_menu li {
+   padding: 5px 0px;
+}
+
+.ex_menu a {
+   position: relative;
+   text-decoration: none;
+   color: #000000;
+}
+
+
+.ex_menu {
+   position: relative;
+   display: block;
+}
+.dropdownMenu {
+   list-style-type: none;
+   padding: 10px 10px;
+   display: none;
+}
+
+.ex_menu:hover .dropdownMenu {
+   display: block;
+   text-decoration: none;
+}
+
+.menu {
+   padding : 0px 35px;
+}
+
+.sb_menu {
+   list-style-type: none;
+   position: relative;
+}
+
+
+.sb_menu a {
+   text-decoration: none;
+   color: #000000;
+}
+
+.sb_menu li {
+   padding: 5px 0px;
+}
+
+.nav {
+  padding-top: 10px;
+  width: 20%;
+  background-color: #F0F0F0;
+  margin-left: 30px;
+  margin-right: 10px;
+  height: 100%;
+  position: absolute;
+  float: left;
+}
+
+
 
 
 
