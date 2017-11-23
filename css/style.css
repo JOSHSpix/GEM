@@ -362,6 +362,21 @@ margin: 10px 10px;
 text-align: center;
 }
 
+a.toggle-content {
+color: black;
+text-decoration: none;
+}
+
+a.toggle-content:hover {
+color: #7ec0ee;
+text-decoration: underline;
+}
+
+a.toggle-content.active {
+color: #7ec0ee;
+font-weight: bold;
+}
+
 .hidden-content {
   display: none;
 }
