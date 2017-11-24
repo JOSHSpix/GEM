@@ -5,6 +5,7 @@ box-sizing:border-box
 .All {
    background-image: url("https://ak8.picdn.net/shutterstock/videos/14017838/thumb/1.jpg");
    margin: -8px -10px 0px -8px;
+   background-size: cover;
 }
 
 .header {
