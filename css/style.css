@@ -367,7 +367,7 @@ text-decoration: none;
 
 a.toggle-content:hover {
 color: orange;
-text-decoration: underline;
+text-decoration: none;
 }
 
 a.toggle-content.active {
