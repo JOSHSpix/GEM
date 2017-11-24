@@ -421,17 +421,30 @@ text-decoration: none;
    text-decoration: none;
 }
 
+
+.store_page {
+	max-width: 100%;
+	display: block;
+}
+
 .store_item {
 	width: 30%;
-	float: left;
-	position: absolute;
+	position: relative;
 	height:65vh;
-	left: 15%;
 	top: 25%;
+	left: 15%;
+	display: inline-block;
 }
 
 
-
+.item_description {
+	width: 30%;
+	position: relative;
+	height: 65vh;
+	top: 25%;
+	right: 15%;
+	display: inline-block;
+}
 
    
 
