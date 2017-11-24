@@ -429,21 +429,24 @@ text-decoration: none;
 
 .store_item {
 	width: 30%;
-	position: relative;
+	position: absolute;
 	height:65vh;
 	top: 25%;
-	left: 15%;
+	left: 20%;
 	display: inline-block;
 }
 
 
 .item_description {
 	width: 30%;
-	position: relative;
+	position: absolute;
 	height: 65vh;
 	top: 25%;
-	right: 15%;
+	right: 20%;
 	display: inline-block;
+	font-family: Verdana, Helvetica, sans-serif; 
+	text-transform: uppercase;
+	font-weight: 300;
 }
 
    
