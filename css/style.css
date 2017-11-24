@@ -423,9 +423,14 @@ text-decoration: none;
 
 
 .store_page {
-	max-width: 100%;
-	display: block;
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    margin-top: 3%;
+    background-color: rgb(240,240,240);
+    border: 0.5px solid rgb(200,200,200);
 }
+
 
 .store_item {
 	width: 30%;
@@ -442,7 +447,7 @@ text-decoration: none;
 	position: absolute;
 	height: 65vh;
 	top: 25%;
-	right: 20%;
+	right: 18%;
 	display: inline-block;
 	font-family: Verdana, Helvetica, sans-serif; 
 	text-transform: uppercase;
