@@ -18,7 +18,7 @@ for (i = 0; i < dots.length; i++) {
 }
 slides[slideIndex-1].style.display = "block"; 
 dots[slideIndex-1].className += " active-dot";
-setTimeout(showSlides, 2000); // Change image every 2 seconds
+setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
 /*Featured Item Slider*/
