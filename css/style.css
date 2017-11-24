@@ -425,8 +425,9 @@ text-decoration: none;
 	width: 30%;
 	float: left;
 	position: absolute;
-	height:80vh;
-	margin-left: 100px;
+	height:65vh;
+	left: 15%;
+	top: 25%;
 }
 
 
