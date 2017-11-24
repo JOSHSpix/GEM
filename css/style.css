@@ -296,7 +296,7 @@ text-align: center;
   background-color: #F0F0F0;
   margin-left: 30px;
   margin-right: 10px;
-  height: 100%;
+  min-height: 100%;
   position: absolute;
   float: left;
 }
