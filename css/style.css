@@ -9,8 +9,7 @@ box-sizing:border-box
 
 .header {
    margin: 5px 0px 50px 5px;
-}
-    
+} 
 
 #logo {
   float: left;
@@ -290,12 +289,40 @@ text-align: center;
 
 
 
-
-
-a.toggle-content {
-color: #3493d8;
-text-decoration: none;
+/*Entire Side Nav Bar*/
+.nav {
+  padding-top: 10px;
+  width: 20%;
+  background-color: #F0F0F0;
+  margin-left: 30px;
+  margin-right: 10px;
+  height: 100%;
+  position: absolute;
+  float: left;
 }
+
+/*Titles in Nav Bar*/
+.menu {
+   padding : 0px 35px;
+}
+
+/*Menu for Home, Contact Us, About Us, Account*/
+.sb_menu {
+   list-style-type: none;
+   position: relative;
+}
+
+
+.sb_menu a {
+   text-decoration: none;
+   color: #000000;
+}
+
+.sb_menu li {
+   padding: 5px 0px;
+}
+
+/*Menu with Coins & Lera*/
 .ex_menuNoDropDown {
    list-style-type: none;  
 }
@@ -308,43 +335,7 @@ text-decoration: none;
    text-decoration: none;
 }
 
-a.dropdown-content:hover {
-	color: orange;
-	text-decoration: underline;
-}
-
-
-a.dropdown-content {
-color: #3493d8;
-text-decoration: none;
-display: block;
-margin-top: 15px;
-}
-
-.dropdownMenu.active {
-  display: block;
-}
-.dropdown-content {
-  display: block;
-  margin-top: 15px;
-}
-
-a.toggle-content:hover {
-color: orange;
-text-decoration: underline;
-}
-
-a.toggle-content.active {
-color: #3493d8;
-font-weight: bold;
-}
-
-.hidden-content {
-  display: none;
-}
-
-
-
+/*Menu with Necklace, Bracelet, Ring, Earrings*/
 .ex_menu ul {
    list-style-type: none; 
 }
@@ -367,46 +358,57 @@ text-decoration: underline;
    position: relative;
    display: block;
 }
+
+/*Toggle Content*/
+a.toggle-content {
+color: #3493d8;
+text-decoration: none;
+}
+
+a.toggle-content:hover {
+color: orange;
+text-decoration: underline;
+}
+
+a.toggle-content.active {
+color: #3493d8;
+font-weight: bold;
+}
+
+
+/*Dropdown-Content*/
+a.dropdown-content:hover {
+color: orange;
+text-decoration: underline;
+}
+
+.dropdown-content {
+display: block;
+margin-top: 15px;
+color: #3493d8;
+text-decoration: none;
+}
+
+
+.hidden-content {
+  display: none;
+}
+
+
 .dropdownMenu {
    list-style-type: none;
    padding: 10px 10px;
    display: none;
 }
-
+.dropdownMenu.active {
+  display: block;
+}
 .ex_menu .dropdownMenu.active {
    display: block;
    text-decoration: none;
 }
 
-.menu {
-   padding : 0px 35px;
-}
 
-.sb_menu {
-   list-style-type: none;
-   position: relative;
-}
-
-
-.sb_menu a {
-   text-decoration: none;
-   color: #000000;
-}
-
-.sb_menu li {
-   padding: 5px 0px;
-}
-
-.nav {
-  padding-top: 10px;
-  width: 20%;
-  background-color: #F0F0F0;
-  margin-left: 30px;
-  margin-right: 10px;
-  height: 100%;
-  position: absolute;
-  float: left;
-}
 
 
 
