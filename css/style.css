@@ -6,16 +6,19 @@ box-sizing:border-box
    background-image: url("https://ak8.picdn.net/shutterstock/videos/14017838/thumb/1.jpg");
    margin: -8px -10px 0px -8px;
    background-size: cover;
+   height: 11vh;
 }
 
 .header {
    margin: 0px;
+   height: 100%;
+   
 } 
 
 #logo {
   float: left;
   font-size: 25px;
-  padding: 5px 5px 5px 30px;
+  padding: 0px 0px 0px 30px;
   color: white;
 
 }
