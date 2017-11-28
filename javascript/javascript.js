@@ -1,3 +1,13 @@
+
+function myFunction() {
+    var x = document.getElementById("myHeader");
+    if (x.className === "header") {
+        x.className += " responsive";
+    } else {
+        x.className = "header";
+    }
+}
+
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("photos");
