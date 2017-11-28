@@ -474,7 +474,7 @@ overflow: hidden;
 
 }
 
-.menu_nav footer li {
+footer.menu_nav li {
 float: left;
 font-size: 18px;
 }
