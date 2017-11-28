@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+
+.container {
+  margin: 60px auto;
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.login {
+  position: relative;
+  width: 640px;
+  left: 50%;
+  margin-left: -320px;
+  
+}
+
+.back_info {  
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-top: 100px;
+  box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+}
+
+.cont_forms {
+  position: absolute;
+  overflow: hidden;
+  top:100px;
+  left: 0px;
+  width: 320px;
+  height: 300px;
+  background-color: #eee;
+  transition: all 0.5s;
+}
+
+.cont_forms_active_login {
+  box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+  height: 420px;  
+  top:20px;
+  left: 0px;
+  transition: all 0.5s;
+
+}
+
+.cont_forms_active_sign_up {
+  box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+  height: 420px;  
+  top:20px;
+  left:320px;
+  transition: all 0.5s;
+}
+
+
+.back_image img {
+  width: 100%;
+  opacity: 0.2;
+  animation-name: gold-image;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+.back_image {
+  position: absolute;
+  width: 950px;
+  top:-80px;
+  left: -116px;
+}
+
+.back_image  img {
+  width: 100%;
+  opacity: 0.3;
+  animation-name: gold-image;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.cont_forms_active_login  .cont_img_back_ {
+   top:0px;  
+   transition: all 0.5s;
+}
+
+.cont_forms_active_sign_up  .cont_img_back_ {
+  top:0px;  
+  left: -435px;
+  transition: all 0.5s;
+}
+ 
+
+.login_signup {
+  position: absolute;
+  width: 640px;
+  height: 280px;
+  top: 100px;
+  z-index: 1;
+} 
+
+.col_login {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+.col_login > h2 {
+  font-weight: 400;
+  margin-top: 70px;
+  color: #757575;
+}
+
+.col_login > p {
+ font-weight: 400;
+ margin-top: 15px;
+ width: 80%;
+ color: #37474F;
+}
+
+.btn_login { 
+  background-color: #7ec0ee;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  border-radius:3px;
+  box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
+  color: #000000;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.col_signup {
+  position: relative;
+  float: left;
+  width: 50%;  
+}
+
+.opcitiy h2 {
+  font-weight: 400;
+  color: #fff;
+}
+
+.opcitiy p {
+ font-weight: 400;
+ margin-top: 15px;
+ color: #fff;
+}
+
+
+.opcitiy {
+  position: relative;
+  background-color: rgba(120, 144, 156, 0.75);
+  width: 80%;
+  border-radius:3px ;
+  margin: 60px 0px 0px 30px;
+  padding: 15px 0px;
+}
+
+.btn_sign_up { 
+  background-color: #7ec0ee;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  border-radius:3px;
+  box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
+  color: #000000;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.cont_forms_active_sign_up {
+  z-index: 2;  
+}
+
+.cont_form_login {
+  position: absolute;
+  opacity: 0;
+  display: none;
+  width: 320px;
+  transition: all 0.5s;
+}
+
+.cont_form_login input {
+  padding: 15px 5px;
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 260px;
+  border: none;
+  text-align: left;
+  color: #757575;
+}
+
+.cont_form_login h2 {
+  margin-top: 110px; 
+  font-weight: 400;
+  color: #757575;
+}
+
+.cont_form_login a{
+    text-decoration: none;
+}
+
+.cont_form_login > a,.cont_form_sign_up > a  {
+  color: #757575;
+  position: relative;
+  float: left;
+  margin: 10px;
+  margin-left: 30px;
+}
+
+.cont_forms_active_login {
+  z-index: 2;  
+}
+
+.cont_form_sign_up {
+  position: absolute;
+  width: 320px;
+  float: left;
+  opacity: 0;
+  display: none;
+  transition: all 0.5s;
+}
+
+  
+.cont_form_sign_up input {
+  text-align: left;
+  padding: 13px 5px;
+  margin: 17px 0px 0px 10px;
+  width: 260px;
+  border: none;
+  color: #757575;
+  
+}
+
+.cont_form_sign_up h2 {
+  margin-top: 40px; 
+  font-weight: 400;
+  color: #757575;
+  
+}
+
+.cont_form_sign_up a {
+    text-decoration: none;
+}
+
+
+</style>
+
+
+<body>
+
+
+
+<div class="container">
+    <div class="login">
+    
+      <div class="login_signup">
+        <div class="col_login">
+            <div class="opcitiy">
+        
+              <h2>Log In</h2>  
+              <button class="btn_login" onclick="login()">LOGIN</button>
+            </div>
+        </div>
+     <div class="col_signup">
+       <div class="opcitiy">
+         <h2>Sign Up</h2>
+           <button class="btn_sign_up" onclick="signup()">SIGN UP</button>
+       </div>
+     </div>
+   </div>
+
+    
+    <div class="back_info">
+       <div class="back_image">
+       <img src="file:///Users/issaasbah/Desktop/IMG_4064.JPG" alt="" height="500px" width="100px"/>
+       </div>
+       
+    </div>
+   <div class="cont_forms" >
+      <div class="back_image">
+        <img src="file:///Users/issaasbah/Desktop/IMG_4064.JPG" alt="" height="500px" width="100px"/>
+       </div>
+   <div class="cont_form_login">
+     <a href="#" onclick="login_signup()">X</a>
+     <h2>Log In</h2>
+     <input type="text" placeholder="Email Address" />
+     <input type="password" placeholder="Password" />
+     <button class="btn_login" onclick="login()">Log In</button>
+   </div>
+  
+   <div class="cont_form_sign_up">
+     <a href="#" onclick="login_signup()">X</a>
+     <h2>Sign Up</h2>
+     <input type="text" name="Name" placeholder="First Name" required/>
+     <input type="text" name="Name" placeholder="Last Name" required/>
+     <input type="text" name="company_name" placeholder="Company Name" required/>
+     <input type="email" name="email" placeholder="Email address" />
+     <input type="password" name="password" placeholder="Password" required/> 
+     <button class="btn_sign_up" onclick="signup()">Sign Up</button>
+
+  </div>
+
+    </div>
+    
+  </div>
+ </div>
+</div>
+
+</body>
+
+<script>
+
+
+function login() {
+  document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_login";  
+  document.querySelector('.cont_form_login').style.display = "block";
+  document.querySelector('.cont_form_sign_up').style.opacity = "0";               
+
+  setTimeout(function(){  document.querySelector('.cont_form_login').style.opacity = "1"; },200);  
+  
+  setTimeout(function(){    
+  document.querySelector('.cont_form_sign_up').style.display = "none";
+  },200);  
+  }
+
+function signup() {
+  document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_sign_up";
+  document.querySelector('.cont_form_sign_up').style.display = "block";
+  document.querySelector('.cont_form_login').style.opacity = "0";
+  
+  setTimeout(function(){  document.querySelector('.cont_form_sign_up').style.opacity = "1";},100);  
+
+  setTimeout(function(){   document.querySelector('.cont_form_login').style.display = "none";},400);  
+
+
+}    
+
+
+function login_signup() {
+
+document.querySelector('.cont_forms').className = "cont_forms";  
+document.querySelector('.cont_form_sign_up').style.opacity = "0";               
+document.querySelector('.cont_form_login').style.opacity = "0"; 
+
+setTimeout(function(){
+document.querySelector('.cont_form_sign_up').style.display = "none";
+document.querySelector('.cont_form_login').style.display = "none";},400);  
+}
+
+</script>
+
+</body>
+</html>
