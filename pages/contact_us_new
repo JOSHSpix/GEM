@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+
+.header {
+  overflow: hidden;
+  background-image: url("https://ak8.picdn.net/shutterstock/videos/14017838/thumb/1.jpg");
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#myHeader {
+  position: fixed;
+}
+
+.header a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.header a:hover {
+  background-color: #ffffff;
+  color: #7ec0ee;
+}
+
+#logo:hover {
+   background-color: transparent;
+   color: #ffffff;
+}
+
+.header .active {
+  color: #7ec0ee;
+  background-color: #ffffff
+}
+
+.header .icon {
+  display: none;
+}
+
+.header a:not(:first-child) {display: none;}
+.header a.icon {
+    float: right;
+    display: block;
+}
+
+
+.header.responsive {
+    position: relative;
+}
+.header.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.header.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+.contact_us {
+height: 500px;
+max-width: 510px;
+min-width: 324px;
+margin: 120px auto 0px auto;
+background-color: #fff;
+border: 1px solid #cfcfcf;
+border-bottom: 3px solid #ccc;
+
+}
+
+.row {
+width: 100%;
+margin: 0 0 1em 0;
+padding: 0 2.5em;
+}
+.row_header {
+padding: 1.5em 2.5em;
+border-bottom: 1px solid #ccc;
+background: url(https://lh3.googleusercontent.com/UeTM7l-R6Xnd-I6A65nr6p-QFwG-U3FRGxCmPCXcpB6QxegLWLxG8lvveZW8dxHLNt2bSDdFlDC6q3vmbCdhx6DoziUIHC19=s750) left -80px;
+color: #000000;
+}
+.row_body {
+padding: .5em 2.5em 1em;
+}
+
+.contact_us h1 {
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+display: inline-block;
+font-weight: 100;
+font-size: 2.8125em;
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+margin: 0 0 0.1em 0;
+padding: 0 0 0.4em 0;
+}
+
+.contact_us form {
+max-width: 100%;
+display: block;
+}
+.contact_us form ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+.contact_us form ul li {
+margin: 0 0 0.25em 0;
+clear: both;
+display: inline-block;
+width: 100%;
+}
+
+.contact_us form ul li p {
+margin: 0;
+padding: 0;
+}
+
+.contact_us form ul li .divider {
+margin: 0.5em 0 0.5em 0;
+border: 0;
+height: 1px;
+width: 100%;
+display: block;
+background-color: #4f6fad;
+background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+}
+.contact_us form ul li span {
+color: #ee9cb4;
+}
+.contact_us form label {
+display: block;
+margin: 0 0 6px 0;
+color: #7ec0ee;
+font-size: 16px;
+}
+.contact_us form input {
+margin: 0 0 8px 0;
+border: 1px solid #ccc;
+padding: 6px 10px;
+margin: 0 0 12px 0;
+color: #000000;
+font-size: 1em;
+}
+
+.contact_us form textarea {
+border: 1px solid #ccc;
+padding: 6px 10px;
+width: 100%;
+color: #555;
+}
+
+.contact_us input {
+width: 100%;
+}
+
+.contact_us label {
+width: 100%;
+display: inline-block;
+float: left;
+clear: both;
+}
+
+.contact_us li, p {
+width: 100%;
+}
+
+.contact_us h1 {
+font-size: 40px;
+}
+
+.submit {
+background-color: #7ec0ee;
+color: white;
+padding: 15px 32px;
+text-align: center;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header" id="myHeader">
+    <a id="logo" href="#home" style="font-size:5vmin; padding-left: 20px;">G.E.M: Gold Enterprise Management</a>
+    <a href="#home">Home</a>
+    <a href="#about">Store</a>
+    <a href="/GEM/pages/account.htm">Log In</a>
+    <a href="#news">About Us</a>
+    <a class="active" href="/GEM/pages/contact_us.htm">Contact us</a>
+    <a href="javascript:void(0);" style="font-size:4vmin; margin-right:10px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="contact_us">
+	<div class="row_header">
+		<h1 >CONTACT US</h1>
+	</div>
+	<div class="row_body">
+		<form action="#">
+		<ul>
+			<li>
+				<p class="requirments">
+					<label for="first_name">Name <span>*</span></label>
+					<input type="text" name="Name" placeholder="Name" required/>
+
+
+					<label for="email">Email <span>*</span></label>
+					<input type="email" name="email" placeholder="Email address" />
+
+					<label for="last_name">Subject <span>*</span></label>
+					<input type="text" name="subject" placeholder="Subject" required/> 
+
+					<label for="Comments">comments</label>
+					<textarea cols="100" rows="5" name="comments"></textarea>
+
+					<input class="submit" type="submit" value="Submit" />
+			</li>
+
+		</ul>
+		</form> 
+	</div>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myHeader");
+    if (x.className === "header") {
+        x.className += " responsive";
+    } else {
+        x.className = "header";
+    }
+}
+</script>
+
+</body>
+</html>
