@@ -467,19 +467,18 @@ text-decoration: none;
 
 /*-------Footer-------*/
 
-.menu_nav footer{
+.footer.menu_nav {
 list-style-type: none;
 margin: 0;
 overflow: hidden;
-
 }
 
-footer.menu_nav li {
+.footer.menu_nav li {
 float: left;
 font-size: 18px;
 }
 
-.menu_nav footer a {
+.footer.menu_nav a {
 display: block;
 color: white;
 font-family: Lato;
@@ -487,12 +486,12 @@ padding: 14px 20px;
 text-decoration: none;
 }
 
-.menu_nav footer li a:hover {
+.footer.menu_nav li a:hover {
 background-color: white;
 color: #7ec0ee;
 }
 
-footer {
+.footer {
 width: 100%;
 background-color: #222;
 padding: 60px 0px;
