@@ -307,6 +307,10 @@ text-decoration: none;
 color: black;
 }
 
+.store_products img:hover {
+opacity: 0.8;
+}
+
 
 /*Entire Side Nav Bar*/
 .nav {
