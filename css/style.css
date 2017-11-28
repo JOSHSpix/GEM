@@ -467,26 +467,26 @@ text-decoration: none;
 
 /*-------Footer-------*/
 
-footer.menu_nav {
+.menu_nav footer{
 list-style-type: none;
 margin: 0;
 overflow: hidden;
 
 }
 
-footer.menu_nav li {
+.menu_nav footer li {
 float: center;
 font-size: 18px;
 }
 
-footer.menu_nav a {
+.menu_nav footer a {
 display: block;
 color: white;
 padding: 14px 20px;
 text-decoration: none;
 }
 
-footer.menu_nav li a:hover {
+.menu_nav footer li a:hover {
 background-color: white;
 color: #7ec0ee;
 }
