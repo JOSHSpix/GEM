@@ -475,13 +475,13 @@ overflow: hidden;
 }
 
 .menu_nav footer li {
-float: center;
-font-size: 18px;
+font-size: 14px;
 }
 
 .menu_nav footer a {
 display: block;
 color: white;
+font-family: Lato;
 padding: 14px 20px;
 text-decoration: none;
 }
