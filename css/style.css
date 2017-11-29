@@ -202,13 +202,14 @@ margin: 2px 0px 0px 8px;
 }
 
 .contact_us {
-height: 500px;
+height: 520px;
 max-width: 510px;
 min-width: 324px;
-margin: 40px auto 0px auto;
+margin: 110px auto 0px auto;
 background-color: #fff;
 border: 1px solid #cfcfcf;
 border-bottom: 3px solid #ccc;
+
 }
 
 .row {
@@ -240,11 +241,13 @@ padding: 0 0 0.4em 0;
 .contact_us form {
 max-width: 100%;
 display: block;
+
 }
 .contact_us form ul {
 margin: 0;
 padding: 0;
 list-style-type: none;
+margin-top: 20px;
 }
 .contact_us form ul li {
 margin: 0 0 0.25em 0;
@@ -293,7 +296,7 @@ color: #555;
 }
 
 .contact_us input {
-width: 100%;
+    width: 100%;
 }
 
 .contact_us label {
@@ -305,19 +308,21 @@ clear: both;
 
 .contact_us li, p {
 width: 100%;
+font-size:16px;
 }
 
 .contact_us h1 {
 font-size: 40px;
 }
 
-.submit {
+.contact_us .submit {
 background-color: #7ec0ee;
 color: white;
-padding: 15px 32px;
+width: 40%;
+padding: 10px;
 text-align: center;
 font-size: 16px;
-margin: 4px 2px;
+margin: 6px 5px 6px 120px;
 cursor: pointer;
 }
 
