@@ -1,37 +1,33 @@
 
-function myFunction() {
-    var x = document.getElementById("myHeader");
-    if (x.className === "header") {
-        x.className += " responsive";
-    } else {
-        x.className = "header";
-    }
+var index = 0;
+displaySlides();
+
+function displaySlides() {
+var slides = document.getElementsByClassName("photos");
+var dots = document.getElementsByClassName("dot");
+for (var i = 0; i < slides.length; i++) {
+slides[i].style.display = "none"; 
+}
+index++;
+if (index > slides.length) {
+index = 1
+} 
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active-dot", "");
+}
+slides[index-1].style.display = "block"; 
+dots[index-1].className += " active-dot";
+setTimeout(displaySlides, 4000); // Change image every 4 seconds
+object.style.transition
 }
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("photos");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; 
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1
-  } 
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active-dot", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active-dot";
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+   
 }
 
-/*Image Slideshow*/
-// Ensure that Slideshow div exists
-if  ($(".slideshow").length > 0) {
-  var slideIndex = 0;
-  showSlides();  
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
 }
 
 /*Featured Item Slider*/
