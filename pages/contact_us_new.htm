@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
 <style>
 body {
     font-family: "Lato", sans-serif;
@@ -44,7 +42,7 @@ body {
 }
 
 #main #logo {
-   margin-left: 30px;
+   margin-left: 50px;
 }
 
 .sidenav a,p {
@@ -59,6 +57,7 @@ body {
 .sidenav p {
     margin-top: -10px;
     font-size: 40px;
+    color: #7ec0ee;
 }
 
 .sidenav a:hover {
@@ -73,16 +72,12 @@ body {
     margin-left: 50px;
 }
 
-#body {
-    transition: margin-left .5s;
-    padding: 16px;
-}
 
 .contact_us {
 height: 520px;
 max-width: 510px;
 min-width: 324px;
-margin: 80px auto 0px auto;
+margin: 110px auto 0px auto;
 background-color: #fff;
 border: 1px solid #cfcfcf;
 border-bottom: 3px solid #ccc;
@@ -211,6 +206,7 @@ cursor: pointer;
 
 
 </style>
+</head>
 <body>
 
 <div id="mySidenav" class="sidenav">
@@ -228,8 +224,7 @@ cursor: pointer;
   <a id="logo" style="font-size:4vmin" href="#">G.E.M: Gold Enterprise Management</a>
 </div>
 
-<div id="body">
-  <div class="contact_us">
+<div class="contact_us">
 	<div class="row_header">
 		<h1 >CONTACT US</h1>
 	</div>
@@ -258,22 +253,19 @@ cursor: pointer;
 		</form> 
 	</div>
 </div>
-</div>
+
 
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-     document.getElementById("body").style.marginLeft = "250px";
    
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.getElementById("body").style.marginLeft = "0";
 }
 </script>
      
 </body>
 </html> 
+
