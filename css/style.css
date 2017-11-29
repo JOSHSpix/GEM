@@ -299,7 +299,17 @@ list-style-type: none;
 .store_products li {
 display: inline-block;
 margin: 10px 10px;
-text-align: center;
+text-align: left;
+font-family: Lato;
+}
+
+.store_products li b {
+font-weight: h1;
+}
+
+.store_products li c {
+font-weight: bold;
+color: red;
 }
 
 .store_products a {
@@ -309,6 +319,10 @@ color: black;
 
 .store_products img:hover {
 opacity: 0.65;
+}
+
+.store_products a:hover {
+color: orange;
 }
 
 
