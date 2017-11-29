@@ -1,212 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-    font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #F8F8F8;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-    background-image: url("https://ak8.picdn.net/shutterstock/videos/14017838/thumb/1.jpg");
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-}
-
-#main a{
-  text-decoration: none;
-  color: #ffffff;
-  cursor: pointer;
-  margin-left: 15px;
-
-}
-
-#main button {
-   margin-left: 50px;
-}
-
-#main #logo {
-   margin-left: 50px;
-}
-
-.sidenav a,p {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 24px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav p {
-    margin-top: -10px;
-    font-size: 40px;
-    color: #7ec0ee;
-}
-
-.sidenav a:hover {
-    color: #7ec0ee;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-
-.contact_us {
-height: 520px;
-max-width: 510px;
-min-width: 324px;
-margin: 110px auto 0px auto;
-background-color: #fff;
-border: 1px solid #cfcfcf;
-border-bottom: 3px solid #ccc;
-
-}
-
-.row {
-width: 100%;
-margin: 0 0 1em 0;
-padding: 0 2.5em;
-}
-.row_header {
-padding: 1.5em 2.5em;
-border-bottom: 1px solid #ccc;
-background: url(https://lh3.googleusercontent.com/UeTM7l-R6Xnd-I6A65nr6p-QFwG-U3FRGxCmPCXcpB6QxegLWLxG8lvveZW8dxHLNt2bSDdFlDC6q3vmbCdhx6DoziUIHC19=s750) left -80px;
-color: #000000;
-}
-.row_body {
-padding: .5em 2.5em 1em;
-}
-
-.contact_us h1 {
-font-family: 'Lato', sans-serif;
-font-weight: 300;
-display: inline-block;
-font-weight: 100;
-font-size: 2.8125em;
-border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-margin: 0 0 0.1em 0;
-padding: 0 0 0.4em 0;
-}
-
-.contact_us form {
-max-width: 100%;
-display: block;
-
-}
-.contact_us form ul {
-margin: 0;
-padding: 0;
-list-style-type: none;
-margin-top: 20px;
-}
-.contact_us form ul li {
-margin: 0 0 0.25em 0;
-clear: both;
-display: inline-block;
-width: 100%;
-}
-
-.contact_us form ul li p {
-margin: 0;
-padding: 0;
-}
-
-.contact_us form ul li .divider {
-margin: 0.5em 0 0.5em 0;
-border: 0;
-height: 1px;
-width: 100%;
-display: block;
-background-color: #4f6fad;
-background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
-}
-.contact_us form ul li span {
-color: #ee9cb4;
-}
-.contact_us form label {
-display: block;
-margin: 0 0 6px 0;
-color: #7ec0ee;
-font-size: 16px;
-}
-.contact_us form input {
-margin: 0 0 8px 0;
-border: 1px solid #ccc;
-padding: 6px 10px;
-margin: 0 0 12px 0;
-color: #000000;
-font-size: 1em;
-}
-
-.contact_us form textarea {
-border: 1px solid #ccc;
-padding: 6px 10px;
-width: 100%;
-color: #555;
-}
-
-.contact_us input {
-    width: 100%;
-}
-
-.contact_us label {
-width: 100%;
-display: inline-block;
-float: left;
-clear: both;
-}
-
-.contact_us li, p {
-width: 100%;
-font-size:16px;
-}
-
-.contact_us h1 {
-font-size: 40px;
-}
-
-.contact_us .submit {
-background-color: #7ec0ee;
-color: white;
-width: 40%;
-padding: 10px;
-text-align: center;
-font-size: 16px;
-margin: 6px 5px 6px 120px;
-cursor: pointer;
-}
-
-    
-@media screen and (max-height: 250px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-
-</style>
-</head>
 <body>
 
 <div id="mySidenav" class="sidenav">
@@ -224,50 +18,61 @@ cursor: pointer;
   <a id="logo" style="font-size:4vmin" href="#">G.E.M: Gold Enterprise Management</a>
 </div>
 
-<div class="contact_us">
-	<div class="row_header">
-		<h1 >CONTACT US</h1>
-	</div>
-	<div class="row_body">
-		<form action="#">
-		<ul>
-			<li>
-				<p class="requirments">
-					<label for="first_name">Name <span>*</span></label>
-					<input type="text" name="Name" placeholder="Name" required/>
+<div class="container">
+    <div class="login">
+    
+      <div class="login_signup">
+        <div class="col_login">
+            <div class="opcitiy">
+        
+              <h2>Log In</h2>  
+              <button class="btn_login" onclick="login()">LOGIN</button>
+            </div>
+        </div>
+     <div class="col_signup">
+       <div class="opcitiy">
+         <h2>Sign Up</h2>
+           <button class="btn_sign_up" onclick="signup()">SIGN UP</button>
+       </div>
+     </div>
+   </div>
 
+    
+    <div class="back_info">
+       <div class="back_image">
+       <img src="file:///Users/issaasbah/Desktop/IMG_4064.JPG" alt="" height="500px" width="100px"/>
+       </div>
+       
+    </div>
+   <div class="cont_forms" >
+      <div class="back_image">
+        <img src="file:///Users/issaasbah/Desktop/IMG_4064.JPG" alt="" height="500px" width="100px"/>
+       </div>
+   <div class="cont_form_login">
+     <a href="#" onclick="login_signup()">X</a>
+     <h2>Log In</h2>
+     <input type="text" placeholder="Email Address" />
+     <input type="password" placeholder="Password" />
+     <button class="btn_login" onclick="login()">Log In</button>
+   </div>
+  
+   <div class="cont_form_sign_up">
+     <a href="#" onclick="login_signup()">X</a>
+     <h2>Sign Up</h2>
+     <input type="text" name="Name" placeholder="First Name" required/>
+     <input type="text" name="Name" placeholder="Last Name" required/>
+     <input type="text" name="company_name" placeholder="Company Name" required/>
+     <input type="email" name="email" placeholder="Email address" />
+     <input type="password" name="password" placeholder="Password" required/> 
+     <button class="btn_sign_up" onclick="signup()">Sign Up</button>
 
-					<label for="email">Email <span>*</span></label>
-					<input type="email" name="email" placeholder="Email address" />
+  </div>
 
-					<label for="last_name">Subject <span>*</span></label>
-					<input type="text" name="subject" placeholder="Subject" required/> 
-
-					<label for="Comments">comments</label>
-					<textarea cols="100" rows="5" name="comments"></textarea>
-
-					<input class="submit" type="submit" value="Submit" />
-			</li>
-
-		</ul>
-		</form> 
-	</div>
+    </div>
+    
+  </div>
+ </div>
 </div>
-
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-   
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-     
-</body>
-</html> 
 
 
           
