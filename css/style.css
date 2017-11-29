@@ -303,15 +303,18 @@ display: inline-block;
 margin: 10px 10px;
 text-align: left;
 font-family: Lato;
+padding: 10px;
+border: 1px solid #eee;
 }
 
 .store_products li b {
-font-weight: h1;
-padding-bottom: 10px;
+font-weight: 18px;
+line-height: 2;
 }
 
 .store_products li c {
 padding-bottom: 10px;
+line-height: 2;
 }
 
 .store_products li d {
