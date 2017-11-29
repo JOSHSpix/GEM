@@ -321,6 +321,15 @@ line-height: 2;
 font-weight: bold;
 }
 
+.store_products li e {
+color: red;
+font-weight: bold;
+}
+
+.store_products li f {
+text-decoration: line-through;
+}
+
 .store_products a {
 text-decoration: none;
 color: black;
