@@ -42,7 +42,7 @@ body {
 }
 
 #main #logo {
-   margin-left: 30px;
+   margin-left: 50px;
 }
 
 .sidenav a,p {
@@ -57,6 +57,7 @@ body {
 .sidenav p {
     margin-top: -10px;
     font-size: 40px;
+    color: #7ec0ee;
 }
 
 .sidenav a:hover {
@@ -71,248 +72,137 @@ body {
     margin-left: 50px;
 }
 
-#body {
-    transition: margin-left .5s;
-    padding: 16px;
-}
 
-.container {
-  margin: 60px auto;
-  float: left;
-  width: 100%;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.login {
-  position: relative;
-  width: 640px;
-  left: 50%;
-  margin-left: -320px;
-  
-}
-
-.back_info {  
-  position: relative;
-  float: left;
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-  background-color: #fff;
-  margin-top: 100px;
-  box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
-}
-
-.cont_forms {
-  position: absolute;
-  overflow: hidden;
-  top:100px;
-  left: 0px;
-  width: 320px;
-  height: 300px;
-  background-color: #eee;
-  transition: all 0.5s;
-}
-
-.cont_forms_active_login {
-  box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
-  height: 420px;  
-  top:20px;
-  left: 0px;
-  transition: all 0.5s;
+.contact_us {
+height: 520px;
+max-width: 510px;
+min-width: 324px;
+margin: 110px auto 0px auto;
+background-color: #fff;
+border: 1px solid #cfcfcf;
+border-bottom: 3px solid #ccc;
 
 }
 
-.cont_forms_active_sign_up {
-  box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
-  height: 420px;  
-  top:20px;
-  left:320px;
-  transition: all 0.5s;
+.row {
+width: 100%;
+margin: 0 0 1em 0;
+padding: 0 2.5em;
+}
+.row_header {
+padding: 1.5em 2.5em;
+border-bottom: 1px solid #ccc;
+background: url(https://lh3.googleusercontent.com/UeTM7l-R6Xnd-I6A65nr6p-QFwG-U3FRGxCmPCXcpB6QxegLWLxG8lvveZW8dxHLNt2bSDdFlDC6q3vmbCdhx6DoziUIHC19=s750) left -80px;
+color: #000000;
+}
+.row_body {
+padding: .5em 2.5em 1em;
 }
 
-
-.back_image {
-  position: absolute;
-  width: 950px;
-  top:-80px;
-  left: -116px;
+.contact_us h1 {
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+display: inline-block;
+font-weight: 100;
+font-size: 2.8125em;
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+margin: 0 0 0.1em 0;
+padding: 0 0 0.4em 0;
 }
 
-.back_image  img {
-  width: 100%;
-  opacity: 0.3;
-  animation-name: gold-image;
-  animation-duration: 20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+.contact_us form {
+max-width: 100%;
+display: block;
+
+}
+.contact_us form ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+margin-top: 20px;
+}
+.contact_us form ul li {
+margin: 0 0 0.25em 0;
+clear: both;
+display: inline-block;
+width: 100%;
 }
 
-.cont_forms_active_login  .cont_img_back_ {
-   top:0px;  
-   transition: all 0.5s;
+.contact_us form ul li p {
+margin: 0;
+padding: 0;
 }
 
-.cont_forms_active_sign_up  .cont_img_back_ {
-  top:0px;  
-  left: -435px;
-  transition: all 0.5s;
+.contact_us form ul li .divider {
+margin: 0.5em 0 0.5em 0;
+border: 0;
+height: 1px;
+width: 100%;
+display: block;
+background-color: #4f6fad;
+background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
 }
- 
-
-.login_signup {
-  position: absolute;
-  width: 640px;
-  height: 280px;
-  top: 100px;
-  z-index: 1;
-} 
-
-.col_login {
-  position: relative;
-  float: left;
-  width: 50%;
+.contact_us form ul li span {
+color: #ee9cb4;
 }
-
-.col_login > h2 {
-  font-weight: 400;
-  margin-top: 70px;
-  color: #757575;
+.contact_us form label {
+display: block;
+margin: 0 0 6px 0;
+color: #7ec0ee;
+font-size: 16px;
 }
-
-.col_login > p {
- font-weight: 400;
- margin-top: 15px;
- width: 80%;
- color: #37474F;
+.contact_us form input {
+margin: 0 0 8px 0;
+border: 1px solid #ccc;
+padding: 6px 10px;
+margin: 0 0 12px 0;
+color: #000000;
+font-size: 1em;
 }
 
-.btn_login { 
-  background-color: #7ec0ee;
-  border: none;
-  padding: 10px;
-  width: 200px;
-  border-radius:3px;
-  box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
-  color: #000000;
-  margin-top: 10px;
-  cursor: pointer;
+.contact_us form textarea {
+border: 1px solid #ccc;
+padding: 6px 10px;
+width: 100%;
+color: #555;
 }
 
-.col_signup {
-  position: relative;
-  float: left;
-  width: 50%;  
+.contact_us input {
+    width: 100%;
 }
 
-.opcitiy h2 {
-  font-weight: 400;
-  color: #fff;
+.contact_us label {
+width: 100%;
+display: inline-block;
+float: left;
+clear: both;
 }
 
-.opcitiy p {
- font-weight: 400;
- margin-top: 15px;
- color: #fff;
+.contact_us li, p {
+width: 100%;
+font-size:16px;
 }
 
-
-.opcitiy {
-  position: relative;
-  background-color: rgba(120, 144, 156, 0.75);
-  width: 80%;
-  border-radius:3px ;
-  margin: 60px 0px 0px 30px;
-  padding: 15px 0px;
+.contact_us h1 {
+font-size: 40px;
 }
 
-.btn_sign_up { 
-  background-color: #7ec0ee;
-  border: none;
-  padding: 10px;
-  width: 200px;
-  border-radius:3px;
-  box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
-  color: #000000;
-  margin-top: 10px;
-  cursor: pointer;
-}
-.cont_forms_active_sign_up {
-  z-index: 2;  
+.contact_us .submit {
+background-color: #7ec0ee;
+color: white;
+width: 40%;
+padding: 10px;
+text-align: center;
+font-size: 16px;
+margin: 6px 5px 6px 120px;
+cursor: pointer;
 }
 
-.cont_form_login {
-  position: absolute;
-  opacity: 0;
-  display: none;
-  width: 320px;
-  transition: all 0.5s;
+    
+@media screen and (max-height: 250px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
-
-.cont_form_login input {
-  padding: 15px 5px;
-  margin-left: 10px;
-  margin-top: 20px;
-  width: 260px;
-  border: none;
-  text-align: left;
-  color: #757575;
-}
-
-.cont_form_login h2 {
-  margin-top: 110px; 
-  font-weight: 400;
-  color: #757575;
-}
-
-.cont_form_login a{
-    text-decoration: none;
-}
-
-.cont_form_login > a,.cont_form_sign_up > a  {
-  color: #757575;
-  position: relative;
-  float: left;
-  margin: 10px;
-  margin-left: 30px;
-}
-
-.cont_forms_active_login {
-  z-index: 2;  
-}
-
-.cont_form_sign_up {
-  position: absolute;
-  width: 320px;
-  float: left;
-  opacity: 0;
-  display: none;
-  transition: all 0.5s;
-}
-
-  
-.cont_form_sign_up input {
-  text-align: left;
-  padding: 13px 5px;
-  margin: 17px 0px 0px 10px;
-  width: 260px;
-  border: none;
-  color: #757575;
-  
-}
-
-.cont_form_sign_up h2 {
-  margin-top: 40px; 
-  font-weight: 400;
-  color: #757575;
-  
-}
-
-.cont_form_sign_up a {
-    text-decoration: none;
-}
-
 
 
 </style>
@@ -334,120 +224,50 @@ body {
   <a id="logo" style="font-size:4vmin" href="#">G.E.M: Gold Enterprise Management</a>
 </div>
 
-<div id="body">
-  <div class="container">
-    <div class="login">
-    
-      <div class="login_signup">
-        <div class="col_login">
-            <div class="opcitiy">
-        
-              <h2>Log In</h2>  
-              <button class="btn_login" onclick="login()">LOGIN</button>
-            </div>
-        </div>
-     <div class="col_signup">
-       <div class="opcitiy">
-         <h2>Sign Up</h2>
-           <button class="btn_sign_up" onclick="signup()">SIGN UP</button>
-       </div>
-     </div>
-   </div>
+<div class="contact_us">
+	<div class="row_header">
+		<h1 >CONTACT US</h1>
+	</div>
+	<div class="row_body">
+		<form action="#">
+		<ul>
+			<li>
+				<p class="requirments">
+					<label for="first_name">Name <span>*</span></label>
+					<input type="text" name="Name" placeholder="Name" required/>
 
-    
-    <div class="back_info">
-       <div class="back_image">
-       <img src="file:///Users/issaasbah/Desktop/IMG_4064.JPG" alt="" height="500px" width="100px"/>
-       </div>
-       
-    </div>
-   <div class="cont_forms" >
-      <div class="back_image">
-        <img src="file:///Users/issaasbah/Desktop/IMG_4064.JPG" alt="" height="500px" width="100px"/>
-       </div>
-   <div class="cont_form_login">
-     <a href="#" onclick="login_signup()">X</a>
-     <h2>Log In</h2>
-     <input type="text" placeholder="Email Address" />
-     <input type="password" placeholder="Password" />
-     <button class="btn_login" onclick="login()">Log In</button>
-   </div>
-  
-   <div class="cont_form_sign_up">
-     <a href="#" onclick="login_signup()">X</a>
-     <h2>Sign Up</h2>
-     <input type="text" name="Name" placeholder="First Name" required/>
-     <input type="text" name="Name" placeholder="Last Name" required/>
-     <input type="text" name="company_name" placeholder="Company Name" required/>
-     <input type="email" name="email" placeholder="Email address" />
-     <input type="password" name="password" placeholder="Password" required/> 
-     <button class="btn_sign_up" onclick="signup()">Sign Up</button>
 
-  </div>
+					<label for="email">Email <span>*</span></label>
+					<input type="email" name="email" placeholder="Email address" />
 
-    </div>
-    
-  </div>
- </div>
+					<label for="last_name">Subject <span>*</span></label>
+					<input type="text" name="subject" placeholder="Subject" required/> 
+
+					<label for="Comments">comments</label>
+					<textarea cols="100" rows="5" name="comments"></textarea>
+
+					<input class="submit" type="submit" value="Submit" />
+			</li>
+
+		</ul>
+		</form> 
+	</div>
 </div>
 
-</div>
 
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-     document.getElementById("body").style.marginLeft = "250px";
    
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.getElementById("body").style.marginLeft = "0";
 }
-
-function login() {
-  document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_login";  
-  document.querySelector('.cont_form_login').style.display = "block";
-  document.querySelector('.cont_form_sign_up').style.opacity = "0";               
-
-  setTimeout(function(){  document.querySelector('.cont_form_login').style.opacity = "1"; },100);  
-  
-  setTimeout(function(){    
-  document.querySelector('.cont_form_sign_up').style.display = "none";
-  },200);  
-  }
-
-function signup() {
-  document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_sign_up";
-  document.querySelector('.cont_form_sign_up').style.display = "block";
-  document.querySelector('.cont_form_login').style.opacity = "0";
-  
-  setTimeout(function(){  document.querySelector('.cont_form_sign_up').style.opacity = "1";},100);  
-
-  setTimeout(function(){   document.querySelector('.cont_form_login').style.display = "none";},300);  
-
-
-}   
-
-function login_signup() {
-
-document.querySelector('.cont_forms').className = "cont_forms";  
-document.querySelector('.cont_form_sign_up').style.opacity = "0";               
-
-
-setTimeout(function(){
-document.querySelector('.cont_form_sign_up').style.display = "none";
-document.querySelector('.cont_form_login').style.display = "none";},400);  
-}
- 
-
-
-
 </script>
      
 </body>
 </html> 
+
 
           
