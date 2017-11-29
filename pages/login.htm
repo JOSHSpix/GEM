@@ -1,9 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
 <style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F8F8F8;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    background-image: url("https://ak8.picdn.net/shutterstock/videos/14017838/thumb/1.jpg");
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#main a{
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 15px;
+
+}
+
+#main button {
+   margin-left: 50px;
+}
+
+#main #logo {
+   margin-left: 30px;
+}
+
+.sidenav a,p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav p {
+    margin-top: -10px;
+    font-size: 40px;
+}
+
+.sidenav a:hover {
+    color: #7ec0ee;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#body {
+    transition: margin-left .5s;
+    padding: 16px;
+}
 
 .container {
   margin: 60px auto;
@@ -60,17 +131,6 @@
   transition: all 0.5s;
 }
 
-
-.back_image img {
-  width: 100%;
-  opacity: 0.2;
-  animation-name: gold-image;
-  animation-duration: 20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-
-}
 
 .back_image {
   position: absolute;
@@ -254,14 +314,28 @@
 }
 
 
+
 </style>
-
-
+</head>
 <body>
 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <p>G.E.M</p>
+  <a href="#">Home</a>
+  <a href="#">Store</a>
+  <a href="#">Log in/Sign Up</a>
+  <a href="#">About us</a>
+  <a href="#">Contact Us</a>
+</div>
 
+<div id="main">
+  <a href="#"style="font-size:4vmin;" onclick="openNav()">&#9776;</a>
+  <a id="logo" style="font-size:4vmin" href="#">G.E.M: Gold Enterprise Management</a>
+</div>
 
-<div class="container">
+<div id="body">
+  <div class="container">
     <div class="login">
     
       <div class="login_signup">
@@ -289,7 +363,7 @@
     </div>
    <div class="cont_forms" >
       <div class="back_image">
-        <img src="/GEM/images/IMG_4064.JPG" alt="" height="500px" width="100px"/>
+        <img src="file:///Users/issaasbah/Desktop/IMG_4064.JPG" alt="" height="500px" width="100px"/>
        </div>
    <div class="cont_form_login">
      <a href="#" onclick="login_signup()">X</a>
@@ -317,17 +391,28 @@
  </div>
 </div>
 
-</body>
+</div>
 
 <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+     document.getElementById("body").style.marginLeft = "250px";
+   
+}
 
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("body").style.marginLeft = "0";
+}
 
 function login() {
   document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_login";  
   document.querySelector('.cont_form_login').style.display = "block";
   document.querySelector('.cont_form_sign_up').style.opacity = "0";               
 
-  setTimeout(function(){  document.querySelector('.cont_form_login').style.opacity = "1"; },200);  
+  setTimeout(function(){  document.querySelector('.cont_form_login').style.opacity = "1"; },100);  
   
   setTimeout(function(){    
   document.querySelector('.cont_form_sign_up').style.display = "none";
@@ -341,24 +426,28 @@ function signup() {
   
   setTimeout(function(){  document.querySelector('.cont_form_sign_up').style.opacity = "1";},100);  
 
-  setTimeout(function(){   document.querySelector('.cont_form_login').style.display = "none";},400);  
+  setTimeout(function(){   document.querySelector('.cont_form_login').style.display = "none";},300);  
 
 
-}    
-
+}   
 
 function login_signup() {
 
 document.querySelector('.cont_forms').className = "cont_forms";  
 document.querySelector('.cont_form_sign_up').style.opacity = "0";               
-document.querySelector('.cont_form_login').style.opacity = "0"; 
+
 
 setTimeout(function(){
 document.querySelector('.cont_form_sign_up').style.display = "none";
 document.querySelector('.cont_form_login').style.display = "none";},400);  
 }
+ 
+
+
 
 </script>
-
+     
 </body>
-</html>
+</html> 
+
+          
