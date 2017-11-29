@@ -1,78 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <style>
-
-
-
-.header {
-  overflow: hidden;
-  background-image: url("https://ak8.picdn.net/shutterstock/videos/14017838/thumb/1.jpg");
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+body {
+    font-family: "Lato", sans-serif;
 }
 
-#myHeader {
-  position: fixed;
-}
-
-.header a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.header a:hover {
-  background-color: #ffffff;
-  color: #7ec0ee;
-}
-
-#logo:hover {
-   background-color: transparent;
-   color: #ffffff;
-}
-
-.header .active {
-  color: #7ec0ee;
-  background-color: #ffffff
-}
-
-.header .icon {
-  display: none;
-}
-
-.header a:not(:first-child) {display: none;}
-.header a.icon {
-    float: right;
-    display: block;
-}
-
-
-.header.responsive {
-    position: relative;
-}
-.header.responsive .icon {
-    position: absolute;
-    right: 0;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
+    left: 0;
+    background-color: #F8F8F8;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
-.header.responsive a {
-    float: none;
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    background-image: url("https://ak8.picdn.net/shutterstock/videos/14017838/thumb/1.jpg");
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#main a{
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 15px;
+
+}
+
+#main button {
+   margin-left: 50px;
+}
+
+#main #logo {
+   margin-left: 30px;
+}
+
+.sidenav a,p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #818181;
     display: block;
-    text-align: left;
+    transition: 0.3s;
+}
+
+.sidenav p {
+    margin-top: -10px;
+    font-size: 40px;
+}
+
+.sidenav a:hover {
+    color: #7ec0ee;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#body {
+    transition: margin-left .5s;
+    padding: 16px;
 }
 
 .contact_us {
-height: 500px;
+height: 520px;
 max-width: 510px;
 min-width: 324px;
-margin: 120px auto 0px auto;
+margin: 80px auto 0px auto;
 background-color: #fff;
 border: 1px solid #cfcfcf;
 border-bottom: 3px solid #ccc;
@@ -108,11 +118,13 @@ padding: 0 0 0.4em 0;
 .contact_us form {
 max-width: 100%;
 display: block;
+
 }
 .contact_us form ul {
 margin: 0;
 padding: 0;
 list-style-type: none;
+margin-top: 20px;
 }
 .contact_us form ul li {
 margin: 0 0 0.25em 0;
@@ -161,7 +173,7 @@ color: #555;
 }
 
 .contact_us input {
-width: 100%;
+    width: 100%;
 }
 
 .contact_us label {
@@ -173,38 +185,51 @@ clear: both;
 
 .contact_us li, p {
 width: 100%;
+font-size:16px;
 }
 
 .contact_us h1 {
 font-size: 40px;
 }
 
-.submit {
+.contact_us .submit {
 background-color: #7ec0ee;
 color: white;
-padding: 15px 32px;
+width: 40%;
+padding: 10px;
 text-align: center;
 font-size: 16px;
-margin: 4px 2px;
+margin: 6px 5px 6px 120px;
 cursor: pointer;
+}
+
+    
+@media screen and (max-height: 250px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 
 </style>
-</head>
 <body>
 
-<div class="header" id="myHeader">
-    <a id="logo" href="#home" style="font-size:5vmin; padding-left: 20px;">G.E.M: Gold Enterprise Management</a>
-    <a href="#home">Home</a>
-    <a href="#about">Store</a>
-    <a href="/GEM/pages/account.htm">Log In</a>
-    <a href="#news">About Us</a>
-    <a class="active" href="/GEM/pages/contact_us.htm">Contact us</a>
-    <a href="javascript:void(0);" style="font-size:4vmin; margin-right:10px;" class="icon" onclick="myFunction()">&#9776;</a>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <p>G.E.M</p>
+  <a href="#">Home</a>
+  <a href="#">Store</a>
+  <a href="#">Log in/Sign Up</a>
+  <a href="#">About us</a>
+  <a href="#">Contact Us</a>
 </div>
 
-<div class="contact_us">
+<div id="main">
+  <a href="#"style="font-size:4vmin;" onclick="openNav()">&#9776;</a>
+  <a id="logo" style="font-size:4vmin" href="#">G.E.M: Gold Enterprise Management</a>
+</div>
+
+<div id="body">
+  <div class="contact_us">
 	<div class="row_header">
 		<h1 >CONTACT US</h1>
 	</div>
@@ -233,17 +258,22 @@ cursor: pointer;
 		</form> 
 	</div>
 </div>
+</div>
 
 <script>
-function myFunction() {
-    var x = document.getElementById("myHeader");
-    if (x.className === "header") {
-        x.className += " responsive";
-    } else {
-        x.className = "header";
-    }
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+     document.getElementById("body").style.marginLeft = "250px";
+   
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("body").style.marginLeft = "0";
 }
 </script>
-
+     
 </body>
-</html>
+</html> 
