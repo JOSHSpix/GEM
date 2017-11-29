@@ -25,6 +25,7 @@ body {
     top: 0;
     right: 0;
     left: 0;
+	z-index: 99;
 }
 
 #main a{
@@ -638,6 +639,7 @@ color: orange;
   min-height: 100%;
   position: absolute;
   float: left;
+  margin-top: 43px;
 }
 
 /*Titles in Nav Bar*/
@@ -787,6 +789,7 @@ text-decoration: none;
 width: 100%;
 background-color: #222;
 padding: 60px 0px;
+z-index: 99;
 }
 
 .footer.menu_nav {
