@@ -305,9 +305,14 @@ font-family: Lato;
 
 .store_products li b {
 font-weight: h1;
+padding-bottom: 5px;
 }
 
 .store_products li c {
+padding-bottom: 2px;
+}
+
+.store_products li d {
 font-weight: bold;
 color: red;
 }
