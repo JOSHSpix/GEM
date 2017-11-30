@@ -850,55 +850,6 @@ text-decoration: none;
    display: block;
 }
 
-/*Toggle Content*/
-a.toggle-content {
-color: #3493d8;
-text-decoration: none;
-}
-
-a.toggle-content:hover {
-color: orange;
-text-decoration: none;
-}
-
-a.toggle-content.active {
-color: #3493d8;
-font-weight: bold;
-}
-
-
-/*Dropdown-Content*/
-a.dropdown-content:hover {
-color: orange;
-text-decoration: none;
-}
-
-.dropdown-content {
-display: block;
-margin-top: 15px;
-color: #3493d8;
-text-decoration: none;
-}
-
-
-.hidden-content {
-  display: none;
-}
-
-
-.dropdownMenu {
-   list-style-type: none;
-   padding: 10px 10px;
-   display: none;
-}
-.dropdownMenu.active {
-  display: block;
-}
-.ex_menu .dropdownMenu.active {
-   display: block;
-   text-decoration: none;
-}
-
 
 .store_page {
     width: 1000px;
