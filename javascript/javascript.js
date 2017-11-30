@@ -32,6 +32,7 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
+/*login/signup*/
 function login() {
   document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_login";  
   document.querySelector('.cont_form_login').style.display = "block";
@@ -93,6 +94,7 @@ function showSubMenu(el){
 function hideSubMenu(el){
     el.classList.remove('show-dropMenu');
 }
+
 
 /*Featured Item Slider*/
 var translateX = 0;
