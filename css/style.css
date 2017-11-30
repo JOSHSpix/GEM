@@ -267,7 +267,6 @@ margin: 2px 0px 0px 8px;
 
 .product:hover::before {
     opacity: 1;
-    -webkit-transform: translate(0, 5px);
     transform: translate(0, 5px);
 }
 
