@@ -1,4 +1,5 @@
 
+/*automatic slideshow*/
 var index = 0;
 displaySlides();
 
@@ -21,6 +22,7 @@ setTimeout(displaySlides, 4000); // Change image every 4 seconds
 object.style.transition
 }
 
+/*open-close nav*/
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
    
@@ -54,7 +56,6 @@ function signup() {
 
 }    
 
-
 function login_signup() {
 
 document.querySelector('.cont_forms').className = "cont_forms";  
@@ -66,6 +67,32 @@ document.querySelector('.cont_form_sign_up').style.display = "none";
 document.querySelector('.cont_form_login').style.display = "none";},400);  
 }
 
+/*product menu*/
+[].slice.call(document.querySelectorAll('.menu .product')).forEach(function(el){
+    el.addEventListener('click', onClick, false);
+});
+
+function onClick(e){
+    e.preventDefault();
+    var el = this.parentNode;
+    el.classList.contains('show-dropMenu') ? hideSubMenu(el) : showSubMenu(el);
+}
+
+function showSubMenu(el){
+    el.classList.add('show-dropMenu');
+    document.addEventListener('click', function onDocClick(e){
+        e.preventDefault();
+        if(el.contains(e.target)){
+            return;
+        }
+        document.removeEventListener('click', onDocClick);
+        hideSubMenu(el);
+    });
+}
+
+function hideSubMenu(el){
+    el.classList.remove('show-dropMenu');
+}
 
 /*Featured Item Slider*/
 var translateX = 0;
