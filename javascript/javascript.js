@@ -114,26 +114,3 @@ $(".right").on("click", function(){
     }
 });
 
-/*Store Menu*/
-$(".toggle-content").on("click", function(){
-  var toggle_class = $(this).data("show");
-  
-  $(".toggle-content").removeClass("active");
-  $(this).addClass("active");
-  
-  $(".active-content").toggleClass("hidden-content").toggleClass("active-content");
-  $("."+toggle_class).toggleClass("hidden-content").toggleClass("active-content");
-  
-  return false;
-});
-
-/*Store Menu Click to Expand*/
-
-$(".dropdown-content").on("click", function(){
-  var show_div = $(this).data("show");
-  $(this).addClass("expanded");
-  
-  $(".dropdownMenu."+show_div).toggleClass("active");
-  
-  return false;
-});
