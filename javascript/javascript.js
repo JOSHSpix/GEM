@@ -23,6 +23,28 @@ setTimeout(displaySlides, 4000); // Change image every 4 seconds
 object.style.transition
 }
 
+var i = 0;
+displayStoreSlides();
+
+function displayStoreSlides() {
+  var storeSlides = document.getElementsByClassName("store_photos");
+  var storeDots = document.getElementsByClassName("dots");
+  for (var i = 0; i < slides.length; i++) {
+  storeSlides[i].style.display = "none"; 
+  }
+  index++;
+  if (index > storeSlides.length) {
+     index = 1
+  } 
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active-dots", "");
+   }
+  storeSlides[index-1].style.display = "block"; 
+  dots[i-1].className += " active-dots";
+  setTimeout(displaySlides, 4000); // Change image every 4 seconds
+   object.style.transition
+}
+
 /*open-close nav*/
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
