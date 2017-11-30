@@ -778,37 +778,6 @@ opacity: 0.65;
 color: orange;
 }
 
-.store_page {
-    width: 1000px;
-    height: 500px;
-    margin: auto;
-    margin-top: 3%;
-    background-color: rgb(240,240,240);
-    border: 0.5px solid rgb(200,200,200);
-	margin-bottom: 5%;
-}
-
-
-.store_item {
-	width: 30%;
-	position: absolute;
-	height:65vh;
-	top: 25%;
-	left: 20%;
-	display: inline-block;
-}
-
-
-.item_description {
-	width: 30%;
-	position: absolute;
-	height: 65vh;
-	top: 25%;
-	right: 18%;
-	display: inline-block;
-	font-family: Verdana, Helvetica, sans-serif; 
-	text-transform: uppercase;
-}
 
 
 /*-------Footer-------*/
