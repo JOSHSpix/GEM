@@ -206,6 +206,7 @@ margin: 2px 0px 0px 8px;
 }
 
 /*product menu*/
+
 .All { 
     width: 750px;
     padding: 20px 20px;
@@ -352,7 +353,6 @@ margin: 2px 0px 0px 8px;
     opacity: 1;
     transform: translate(0, 25px) scale(1);
 }
-
 
 /*contact us*/
 .contact_us {
