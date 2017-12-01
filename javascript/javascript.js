@@ -19,7 +19,7 @@ function displaySlides() {
   }
   slides[index - 1].style.display = "block";
   dots[index - 1].className += " active-dot";
-  setTimeout(displaySlides, 4000); // Change image every 4 seconds
+  setTimeout(displaySlides, 5000); // Change image every 4 seconds
   object.style.transition
 }
 
