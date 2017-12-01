@@ -45,6 +45,15 @@ function displayStoreSlides() {
   object.style.transition
 }
 
+/*open-close nav*/
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
 
 /*login/signup*/
 function login() {
