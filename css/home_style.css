@@ -10,4 +10,9 @@ p.item_weight {
     color: white;
     font-family: 'Lato', sans-serif
 }
-  
+
+p.item_name {
+    color: white;
+    font-family: 'Lato', sans-serif
+    font-size: 24em;
+}
