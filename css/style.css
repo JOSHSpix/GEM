@@ -196,7 +196,7 @@ ul.store_items .info p.title {
 
 #right-info {
   width: 25%;
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: -26%;
   bottom: 0px;
