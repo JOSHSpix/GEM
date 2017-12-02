@@ -976,6 +976,7 @@ footer p {
 .footer_form p input,.footer_form p textarea {
   margin-left: 20px;
   width: 210px;
+  color: #EEE;
   background: transparent;
   border: 1px solid #EEE;
   border-radius: 2px;
