@@ -946,6 +946,9 @@ footer {
   color: #FFF;
   text-decoration: none;
 }
+.footer_menu ul li a:hover{
+  color: grey
+}
 .footer_menu ul li:not(:last-child):after {
   content: "/";
   color: #FEFEFE;
