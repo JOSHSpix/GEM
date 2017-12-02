@@ -929,6 +929,7 @@ footer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 30px;
 }
 
 .footer_menu {
