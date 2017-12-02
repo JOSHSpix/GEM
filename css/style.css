@@ -484,10 +484,11 @@ color: #7ec0ee;
 height: 520px;
 max-width: 510px;
 min-width: 324px;
-margin: 110px auto 0px auto;
+margin: 110px auto 75px auto;
 background-color: #fff;
 border: 1px solid #cfcfcf;
 border-bottom: 3px solid #ccc;
+padding-bottom: 15px;
 
 }
 
