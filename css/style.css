@@ -927,10 +927,42 @@ footer {
   background: #333;
   border-top: 1px solid #222;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.footer_menu {
+  width: 100%;
+  text-align: center;
+}
+.footer_menu ul {
+  list-style: none;
+}
+.footer_menu ul li {
+  display: inline-block;
+  margin: 5px;
+}
+.footer_menu ul li a {
+  color: #FFF;
+  text-decoration: none;
+}
+.footer_menu ul li:not(:last-child):after {
+  content: "/";
+  color: #FEFEFE;
+  margin-left: 10px;
+}
+.footer_form {
+  width: 50%;
+  text-align: left;
+  padding-left: 18px;
+  box-sizing: border-box;
+}
+.footer_info {
+  width: 50%;
+  text-align: right;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
 footer p {
   margin: 0px;
 }
-   
-
