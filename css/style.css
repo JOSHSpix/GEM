@@ -966,3 +966,18 @@ footer {
 footer p {
   margin: 0px;
 }
+.footer_form h3 {
+  color: #EEEE;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.footer_form p input,.footer_form p textarea {
+  margin-left: 20px;
+  width: 210px;
+  background: transparent;
+  border: 1px solid #EEE;
+  border-radius: 2px;
+  padding: 5px;
+}
