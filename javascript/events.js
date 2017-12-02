@@ -37,7 +37,7 @@ $(".ex_menu a").on("click", function(){
 $(".store_items li").on("click", function(){
 
     // Clear Items
-    $("#right-info").html('<div class="image-cover"></div><h3 class="title"></h3><p class="details"></p>');
+    $("#right-info").html('<div class="image-cover"><a href="#" class="hide-info">&#10005;</a></div><h3 class="title"></h3><p class="details"></p>');
 
     // Show the Correct Div
     if(! $("#store_body").hasClass("show-info")){
@@ -53,5 +53,18 @@ $(".store_items li").on("click", function(){
     $("#right-info .details").html(details);
 
 
+    return false;
+});
+
+$("body").on("click", ".hide-info", function(){
+
+    // Clear Items
+    $("#right-info").html('<div class="image-cover"><a href="#" class="hide-info">&#10005;</a></div><h3 class="title"></h3><p class="details"></p>');
+    
+    // Show the Correct Div
+    if($("#store_body").hasClass("show-info")){
+        $("#store_body").removeClass("show-info");
+    }
+   
     return false;
 });
