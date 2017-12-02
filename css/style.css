@@ -615,9 +615,7 @@ cursor: pointer;
 
 /*login-sign up*/
 .container {
-  margin: 60px auto;
-  float: left;
-  width: 1150px;
+  min-height: 465px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
@@ -625,9 +623,7 @@ cursor: pointer;
 .login {
   position: relative;
   width: 640px;
-  left: 50%;
-  margin-left: -320px;
-  
+  margin: 0px auto;
 }
 
 .back_info {  
