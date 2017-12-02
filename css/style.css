@@ -234,7 +234,8 @@ p.details {
 
 .image-cover a.hide-info {
   font-size: 20px;
-  color: #FFF;
+  font-weight: bold;
+  color: #7ec0ee;
   position: absolute;
   top: 5px;
   right: 5px;
